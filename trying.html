@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-
     <script src='https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js'></script>
-    <link href="style.css">
-
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
+    <link href="style.css">
 
 
 </head>
@@ -47,26 +45,21 @@
   <div class="column">
     <div class="large-article-header">
       <div class="large-article-header-content">
-          <header class="sticky-shrinknav-header">
-              <h1 style="text-align: center" class="sticky-shrinknav-header-title">AUSTIN'S LOCAL NEWS</h1>
-              <ul style="text-align: center"class="menu align-center sticky-shrinknav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </header>
-            
-            
         <div class="center-container">
-          <div class="row">
-            <div class="column">
-              <div class="article-date">
-                <p>Published on Jan 12, 2016</p>
-              </div>
-              <div class="article-title">
-              <h1>A Great Big Article Title Goes Here</h1>
-              </div>
+          <div class="article-date">
+            <p>Published on Jan 12, 2016</p>
+          </div>
+          <div class="article-title">
+            <h1>A Great Big Article Title Goes Here</h1>
+          </div>
+          <div class='row'>
+          <div class="article-details">
+            <div class="article-author">
+              <img src="https://unsplash.it/50/50?image=1005" alt="" />
+              <a href="#">Jane Austen</a>
+            </div>
+            <div class="article-comments">
+              <a href="#"><i class="fa fa-comment" aria-hidden="true"></i> 3 Comments</a>
             </div>
           </div>
           </div>
@@ -75,22 +68,8 @@
     </div>
   </div>
 </div>
-<script>
-  $(document).ready(function(){
-
-$(function() {
-  $(window).scroll(function() {
-    var winTop = $(window).scrollTop();
-    if (winTop >= 30) {
-      $("body").addClass("sticky-shrinknav-wrapper");
-    } else{
-      $("body").removeClass("sticky-shrinknav-wrapper");
-    }
-  });
-});
-});
 
 
-</script>
+    
 </body>
 </html>
