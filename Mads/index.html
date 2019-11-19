@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Fixed Width 1 Orange</title>
+  <link href="styleindex.css">
+  </script>
+  <script type="text/javascript">
+    /* =============================
+    This script generates sample text for the body content. 
+    You can remove this script and any reference to it. 
+     ============================= */
+    var bodyText = ["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h2>Heading</h2><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+
+  </script>
+</head>
+
+<body>
+  <div id="page">
+    <header id="header">
+      <div id="header-inner">
+        <div id="logo">
+          <h1><a href="#"> The <span>Austin</span> Tribune</a></h1>
+        </div>
+        <div id="top-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <form class='main-nav'>
+                <input type="search" placeholder="Search">
+                <button>Go</button>
+            </li>
+            </form>
+          </ul>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </header>
+    <div class="feature">
+      <div class="feature-inner">
+      </div>
+    </div>
+
+
+    <div id="content">
+      <div id="content-inner">
+
+        <main id="contentbar">
+          <div class="article">
+            <p>
+              <div id="outer-grid">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div id="inner-grid">
+                  <div>5</div>
+                  <div>6</div>
+                  <div>7</div>
+                  <div>8</div>
+                </div>
+              </div>
+            </p>
+          </div>
+        </main>
+
+        <nav id="sidebar">
+          <div class="widget">
+            <h3>Left heading</h3>
+
+          </div>
+        </nav>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+
+    <div id="footerblurb">
+      <div id="footerblurb-inner">
+
+        <div class="column">
+          <h2><span>Heading</span></h2>
+          <p>
+            <script>generateText(2)</script>
+          </p>
+        </div>
+        <div class="column">
+          <h2><span>Heading</span></h2>
+          <p>
+            <script>generateText(2)</script>
+          </p>
+        </div>
+        <div class="column">
+          <h2><span>Heading</span></h2>
+          <p>
+            <script>generateText(2)</script>
+          </p>
+        </div>
+
+        <div class="clr"></div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div id="footer-inner">
+        <p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy
+            Policy</a></p>
+        <div class="clr"></div>
+      </div>
+    </footer>
+  </div>
+  <script>
+
+    var unirest = require("unirest");
+
+var req = unirest("POST", "https://vedicrishi-horoscope-matching-v1.p.rapidapi.com/astro_details/");
+
+req.headers({
+	"x-rapidapi-host": "vedicrishi-horoscope-matching-v1.p.rapidapi.com",
+	"x-rapidapi-key": "a5fda4c82emsh1f5d00eeb5ef450p1dba09jsndd9e8455fd50",
+	"content-type": "application/json",
+	"accept": "application/json"
+});
+
+req.type("json");
+req.send({
+	"day": "25",
+	"month": "12",
+	"year": "1988",
+	"hour": "20",
+	"min": "24",
+	"lat": "25.123",
+	"lon": "82.34",
+	"tzone": "5.5",
+	"gender": "male"
+});
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+    $.ajax({
+      url: 'https://newsapi.org/v2/everything?sortBy=relevancy&q=austin+texas+local+news&pageSize=2&apiKey=d9da22da0a2347a58fea3976369ee1f1',
+      method: "GET",
+
+    }).then(function (response) {
+      console.log(this);
+      console.log(response.data);
+      var results = response.data;
+      var targetOne = document.getElementById("target2");
+      $('#target2').empty();
+      $("#target2").text(response.articles[0].description + response.articles[0].title);
+
+
+    });</script>
+</body>
+
+</html>
