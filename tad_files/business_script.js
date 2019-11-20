@@ -11,9 +11,9 @@ var investDomains = "domains=wsj.com,fool.com";
 var finDomains = "domains=cnbc.com";
 var newsTitles = ["titleA", "titleB", "titleC", "titleD", "titleE", "titleF", "titleG", "titleH", "titleI"];
 var investTitles = ["titleJ", "titleK", "titleL", "titleM", "titleN", "titleO", "titleP", "titleQ"];
-var newsSubs = ["subA", "subB", "subC", "subD", "subE", "subF", "subG", "subH", "subI"]; 
+var newsSubs = ["subA", "subB", "subC", "subD", "subE", "subF", "subG", "subH", "subI"];
 var investSubs = ["subJ", "subK", "subL", "subM", "subN", "subO", "subP", "subQ"];
-var newsPics = ["picA", "picB", "picC", "picD", "picE", "picF", "picG", "picH", "picI"]; 
+var newsPics = ["picA", "picB", "picC", "picD", "picE", "picF", "picG", "picH", "picI"];
 var investPics = ["picJ", "picK", "picL", "picM", "picN", "picO", "picP", "picQ"];
 
 //Creating the URLs for business and finance sections
