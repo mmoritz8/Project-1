@@ -1,0 +1,56 @@
+.busPageMain {
+    font-weight: bold;
+}
+
+.footer {
+    height: 100px;
+    background: white;
+}
+
+.sectionHead {
+    font-size: 30px;
+}
+
+.bodyRowA {
+    margin-bottom: 30px;
+}
+
+.bodyRowC {
+    margin-bottom: 30px;
+}
+
+.bodyRowD {
+    margin-bottom: 30px;
+}
+
+h2, .sectionHead{
+    color: rgb(0, 107, 0);
+    font-family: 'Calistoga', cursive;
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif; */
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.advertisement {
+    margin-left: 3%;
+    height: 1px;
+    /* position: sticky; */
+    top: 10px;
+}
+
+.advPic {
+    margin-bottom: 250%;
+}
+
+@media only screen and (max-width: 1540px) {
+    .advertisement {
+      display: none !important;
+    }
+}
