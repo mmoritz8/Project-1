@@ -39,9 +39,9 @@ $.ajax({
     // headline.text(x.response.docs[0].headline.main)
     headline.append('<a href=' + x.response.docs[0].web_url + ">" + x.response.docs[0].headline.main + "</a>")
     // headline.attr( 'href', x.response.docs[0].web_url)
-    var content = $('<p>');
-    content.text(x.response.docs[0].abstract);
-    $(article).append(headline, content);
+    // var content = $('<p>');
+    // content.text(x.response.docs[0].abstract);
+    $(article).append(headline);
     $('.sub-articles').append(article);
   })
 }
@@ -93,6 +93,6 @@ function adverts () {
 
 
 buildMain();
-// articleBuild();
+articleBuild();
 videoSection();
 adverts();
