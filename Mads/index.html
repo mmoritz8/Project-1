@@ -10,44 +10,57 @@
   <!-- css -->
 
   <link rel='stylesheet' href='mindex.css'>
+  <link href="/assets/Austin-Skyline-at-Night_111311076.jpg">
 
   <!-- Load jQuery Here -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- style below -->
   <style>
-    * {
-      margin: 5px, 0, 5px, 0;
-      padding: .1%;
+    .flex-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      box-sizing: border-box;
     }
+
+    .bar-a {
+      display: flex;
+      justify-content: flex-start;
+      max-width: 100%;
+      height: .07%;
+      margin-bottom: 20px;
+
+      background-color: black;
+    }
+
+    .bar-b {
+      display: flex;
+      width: 100%;
+      padding-top: .05%;
+      margin-top: .005%;
+      height: 30px;
+      margin-bottom: 20px;
+      background-color: royalblue;
+    }
+
 
     header {
       display: flex;
-      justify-content: stretch;
-
-      flex-grow: 1;
+      position: sticky;
       background-color: #232526;
-      margin-bottom: 50px;
-      color: #5995DA;
-    }
-
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      max-width: 100%;
-      height: 50px;
-      display: flex;
-
+      margin-bottom: .01%;
     }
 
     nav {
+      display: flex;
+      justify-content: center;
       text-align: left;
       color: white;
       font-size: 18px;
-      padding: 5px;
-      display: flex;
-      align-content: flex-start;
+      margin-bottom: 10px;
+      margin-top: auto;
+      padding: .05%;
     }
 
     li a {
@@ -66,29 +79,22 @@
 
     }
 
-    .columns {
+
+    .row {
       display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
     }
 
-    .column {
-      flex: 1;
+    .col {
+      display: flex;
       flex-direction: column;
-    }
-
-    .main-column {
-      flex: 2;
-      flex-direction: column;
-    }
-
-    .article {
-      flex: 1;
     }
   </style>
 </head>
 
 <body>
-
-  <header class='header'>
+  <header>
     <nav>
       <ul>
         <li><a href='../index.html'>Home</a></li>
@@ -102,30 +108,27 @@
     </nav>
   </header>
 
-  <div class="bar"></div>
-  <div class="flex-container">
+  <div class='flex-container'>
+    <div class="row">
+      <div class="col">
+        <div class="bar bar-b"></div>
 
-    <div class="columns">
-      <div class="column main-column">
-        <a class="article first-article">
-          <figure class="article-image">
-            <img src="/assets/Images/busPageMainPic.jpg">
-          </figure>
-          <div class="article-body">
-            <h2 class="article-title">
-              <!-- title -->
-            </h2>
-            <p class="article-content" id="target">
-              <!-- gettin' it. populate results here -->
-            </p>
+        <div class="row">
+          <div class="bar bar-a">
+            <img style="background-position: center; background-repeat: no-repeat; max-width: 100%;"
+              src="Austin-Skyline-at-Night_111311076.jpg">
           </div>
-        </a>
-      </div>
-      <div class="column">
-        1/3
-      </div>
-    </div>
-  </div>
+        </div>
+
+
+        <div class="flex-container"></div>
+        <div class="row">
+          <div class="col">1/3</div>
+          <div class="col">1/3</div>
+
+          <div class="col">1/3</div>
+
+        </div>
 
 </body>
 
