@@ -1,66 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="gr__foundation_zurb_com" lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Austin Tribune</title>
+  <script src="https://code.jquery.com/jquery.js"></script>
 
-  <!-- css -->
 
-  <link rel='stylesheet' href='mindex.css'>
-  <link href="/assets/Austin-Skyline-at-Night_111311076.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
 
-  <!-- Load jQuery Here -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
+  <meta class="foundation-mq">
 
-  <!-- style below -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="business_style.css">
+  <script type="text/javascript" src="business_script.js"></script>
   <style>
-    .flex-container {
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
-      box-sizing: border-box;
-    }
-
-    .bar-a {
-      display: flex;
-      justify-content: flex-start;
-      max-width: 100%;
-      height: .07%;
-      margin-bottom: 20px;
-
-      background-color: black;
-    }
-
-    .bar-b {
-      display: flex;
-      width: 100%;
-      padding-top: .05%;
-      margin-top: .005%;
-      height: 30px;
-      margin-bottom: 20px;
-      background-color: royalblue;
-    }
-
-
     header {
-      display: flex;
+      width: 100%;
       position: sticky;
       background-color: #232526;
-      margin-bottom: .01%;
+      margin-bottom: 50px;
     }
 
     nav {
-      display: flex;
-      justify-content: center;
       text-align: left;
       color: white;
       font-size: 18px;
-      margin-bottom: 10px;
-      margin-top: auto;
-      padding: .05%;
+      padding: 5px;
+    }
+
+    .bar {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 20px;
+      background-color: turquoise;
     }
 
     li a {
@@ -73,27 +50,23 @@
       border-left: 1px solid #000000;
       padding-left: 20px;
     }
-
-    .flex-container {
-      display: flex;
-
-    }
-
-
-    .row {
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: row;
-    }
-
-    .col {
-      display: flex;
-      flex-direction: column;
-    }
   </style>
 </head>
 
-<body>
+<body data-gr-c-s-loaded="true">
+  <br>
+  <br>
+  <!-- <div class="column large-1 advertisement">
+        <img class="advPic" src="../assets/Images/tdAmeritrade.jpg">
+        <br>
+        <img class="advPic" src="../assets/Images/marketWatch.png">
+        <br>
+        <img class="advPic" src="../assets/Images/invesco.jpg">
+        <br>
+        <img class="advPic" src="../assets/Images/fidelity.png">
+        <br>
+    </div> -->
+
   <header>
     <nav>
       <ul>
@@ -107,29 +80,179 @@
       </ul>
     </nav>
   </header>
+  <div class="row busPageMainRow">
+    <div class="small-12 medium-12 large-9 column busPageMainArticle">
+      <div class="bar-a">
+        <img style="background-position: center; background-repeat: no-repeat; max-width: 100%;"
+          src="Austin-Skyline-at-Night_111311076.jpg">
+      </div>
+      <h2 class="busPageMain titleA"></h2>
+      <p class="busPageMainSub subheader subA"></p>
+    </div>
+    <div class="small-12 medium-12 large-3 column busPageMainPic">
+      <img class="picA" src="../assets/Images/busPageMainPic.jpg" alt="Main Finance Headline Image">
+    </div>
+  </div>
 
-  <div class='flex-container'>
-    <div class="row">
-      <div class="col">
-        <div class="bar bar-b"></div>
+  <div class="container">
+    <div class="row column">
+      <hr>
+      <div class="bar"></div>
 
-        <div class="row">
-          <div class="bar bar-a">
-            <img style="background-position: center; background-repeat: no-repeat; max-width: 100%;"
-              src="Austin-Skyline-at-Night_111311076.jpg">
-          </div>
+    </div>
+    <div class="row column">
+      <p class="lead sectionHead"><strong>Finance</strong></p>
+    </div>
+    <div class="row bodyRowA small-up-2 medium-up-3 large-up-4">
+      <div class="column">
+        <div class="bodyColA">
+          <p><img class="picB" src="../assets/Images/businessImage.jpg" alt="Finance Image">
+          </p>
+          <p class="lead titleB"></p>
+          <p class="subheader subB"></p>
         </div>
-
-
-        <div class="flex-container"></div>
-        <div class="row">
-          <div class="col">1/3</div>
-          <div class="col">1/3</div>
-
-          <div class="col">1/3</div>
-
+      </div>
+      <div class="column">
+        <div class="bodyColB">
+          <p><img class="picC" src="../assets/Images/businessImage.jpg" alt="Finance Image">
+          </p>
+          <p class="lead titleC"></p>
+          <p class="subheader subC"></p>
         </div>
+      </div>
+      <div class="column">
+        <div class="bodyColC">
+          <p><img class="picD" src="../assets/Images/businessImage.jpg" alt="Finance Image">
+          </p>
+          <p class="lead titleD"></p>
+          <p class="subheader subD"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColD">
+          <p><img class="picE" src="../assets/Images/businessImage.jpg" alt="Finance Image">
+          </p>
+          <p class="lead titleE"></p>
+          <p class="subheader subE"></p>
+        </div>
+      </div>
+    </div>
 
+    <div class="row bodyRowB small-up-2 medium-up-3 large-up-4">
+      <div class="column">
+        <div class="bodyColA">
+          <p><img class="picF" src="../assets/Images/businessImage.jpg" alt="Finance Image">
+          </p>
+          <p class="lead titleF"></p>
+          <p class="subheader subF"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColB">
+          <p><img class="picG" src="../assets/Images/businessImage.jpg" alt="Finance Image">
+          </p>
+          <p class="lead titleG"></p>
+          <p class="subheader subG"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColC">
+          <p><img class="picH" src="../assets/Images/businessImage.jpg" alt="Finance Image">
+          </p>
+          <p class="lead titleH"></p>
+          <p class="subheader subH"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColD">
+          <p><img class="picI" src="../assets/Images/businessImage.jpg" alt="Finance Image">
+          </p>
+          <p class="lead titleI"></p>
+          <p class="subheader subI"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row column">
+      <hr>
+    </div>
+    <div class="row column">
+      <p class="lead sectionHead"><strong>Investing</strong></p>
+    </div>
+    <div class="row bodyRowC small-up-2 medium-up-3 large-up-4">
+      <div class="column">
+        <div class="bodyColA">
+          <p><img class="picJ" src="../assets/Images/businessImage.jpg" alt="Investing ImageG">
+          </p>
+          <p class="lead titleJ"></p>
+          <p class="subheader subJ"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColB">
+          <p><img class="picK" src="../assets/Images/businessImage.jpg" alt="Investing ImageH">
+          </p>
+          <p class="lead titleK"></p>
+          <p class="subheader subK"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColC">
+          <p><img class="picL" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
+          </p>
+          <p class="lead titleL"></p>
+          <p class="subheader subL"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColD">
+          <p><img class="picM" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
+          </p>
+          <p class="lead titleM"></p>
+          <p class="subheader subM"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row bodyRowD small-up-2 medium-up-3 large-up-4">
+      <div class="column">
+        <div class="bodyColA">
+          <p><img class="picN" src="../assets/Images/businessImage.jpg" alt="Investing ImageJ">
+          </p>
+          <p class="lead titleN"></p>
+          <p class="subheader subN"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColB">
+          <p><img class="picO" src="../assets/Images/businessImage.jpg" alt="Investing ImageK">
+          </p>
+          <p class="lead titleO"></p>
+          <p class="subheader subO"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColC">
+          <p><img class="picP" src="../assets/Images/businessImage.jpg" alt="Investing ImageL">
+          </p>
+          <p class="lead titleP"></p>
+          <p class="subheader subP"></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="bodyColD">
+          <p><img class="picQ" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
+          </p>
+          <p class="lead titleQ"></p>
+          <p class="subheader subQ"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+  </footer>
 </body>
 
 </html>
