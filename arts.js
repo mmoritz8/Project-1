@@ -5,6 +5,7 @@ var musicURL = `https://newsapi.org/v2/everything?q=+music&domains=pitchfork.com
 var artURL = `https://newsapi.org/v2/everything?q=+artist&domains=thisiscolossal.com&apiKey=${newsApiKey}`;
 var articleArray = [];
 
+
 var headlineLoad = function(){
 
 $.ajax({
@@ -18,8 +19,12 @@ $.ajax({
     $(".headline-title").append(response.articles[0].title);
     $(".headline-sum").empty();
     $(".headline-sum").append(response.articles[0].description);
+    $(".headline-div").on("click", function() {
+        window.open(response.articles[0].url, '_blank');   
+    })
 })
 }
+
 headlineLoad();
 
     // movie ajax call
@@ -57,7 +62,7 @@ var articleSearch = function(response){
     var results = [];
     for (i = 0; i < 3; i++) {
         if (i === 0){
-            results.push(REsponse.articles[i]); 
+          results.push(REsponse.articles[i]); 
         }
         if (i === 1) {
           results.push(REsponse.articles[i]);
@@ -66,46 +71,51 @@ var articleSearch = function(response){
           results.push(REsponse.articles[i]);
         }
     }
-    // console.log(results);
     return results;
 }             
-
+    //adds each of the 3 movie articles to there id targeted divs containing an img, title (also link to source) and description.
 var movieAppender = function(x) {
     
     for (i = 0; i < x.length; i++) {
+        var x = x;
+        var link = x[i].url;
         $(`#movie-img-${i}`).empty();
         $(`#movie-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
         $(`#movie-title-${i}`).empty();
         $(`#movie-title-${i}`).append(x[i].title);
         $(`#movie-sum-${i}`).empty();
         $(`#movie-sum-${i}`).append(x[i].description);
-        // console.log((x[i].title));
+        $(`#movie-title-${i}`).attr("href", link);
     }
 }
-
+    //adds each of the 3 music articles to there id targeted divs containing an img, title (also link to source) and description.
 var musicAppender = function(x) {
     
     for (i = 0; i < x.length; i++) {
+        var x = x;
+        var link = x[i].url;
         $(`#music-img-${i}`).empty();
         $(`#music-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
         $(`#music-title-${i}`).empty();
         $(`#music-title-${i}`).append(x[i].title);
         $(`#music-sum-${i}`).empty();
         $(`#music-sum-${i}`).append(x[i].description);
-        // console.log((x[i].title));
+        $(`#music-title-${i}`).attr("href", link);
     }
 }
-
+    //adds each of the 3 art articles to there id targeted divs containing an img, title (also link to source) and description.
 var artAppender = function(x) {
     
     for (i = 0; i < x.length; i++) {
+        var x = x;
+        var link = x[i].url;
         $(`#art-img-${i}`).empty();
         $(`#art-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
         $(`#art-title-${i}`).empty();
         $(`#art-title-${i}`).append(x[i].title);
         $(`#art-sum-${i}`).empty();
         $(`#art-sum-${i}`).append(x[i].description);
-        // console.log((x[i].title));
+        $(`#art-title-${i}`).attr("href", link);
     }
 }
 
