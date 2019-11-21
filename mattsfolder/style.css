@@ -52,3 +52,47 @@ li {
     padding-left: 60px;
 }
 
+.top-bar, .top-bar ul{
+    background-color: #434343;
+    margin-bottom: 20px;
+}
+
+.name {
+    width: 20%;
+}
+.email {
+    width: 20%;
+}
+
+.sweepstakes {
+    display: none;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    margin-bottom: 150px;
+}
+li {
+    display: inline;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+a {
+    color: white;
+    font-weight: bold;
+}
+a:hover {
+    color: white;
+    background: #414547;
+}
+a:visited {
+    color: white;
+}
+.title-bar {
+    text-align: center;
+    background-color: #242729;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

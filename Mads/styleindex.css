@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  flex:1;
+}
+
+.main-column {
+  flex:2;
+}
