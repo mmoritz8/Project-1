@@ -19,11 +19,11 @@
   <style>
     .flex-container {
       display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
       box-sizing: border-box;
+      flex-direction: row;
     }
 
+    .bar,
     .bar-a {
       display: flex;
       justify-content: flex-start;
@@ -47,6 +47,7 @@
 
     header {
       display: flex;
+      justify-content: center;
       position: sticky;
       background-color: #232526;
       margin-bottom: .01%;
@@ -76,24 +77,46 @@
 
     .flex-container {
       display: flex;
-
-    }
-
-
-    .row {
-      display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex-direction: row;
+      flex-wrap: nowrap;
     }
 
-    .col {
+    .flex-container1 {
+      display: flex;
+      justify-content: space-betweeen;
+      flex-direction: column;
+    }
+
+    .article {
       display: flex;
       flex-direction: column;
+      flex-basis: auto;
+    }
+
+    #article1 {
+      flex: 2;
+    }
+
+    .article-body {
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+    }
+
+    .article-content {
+      display: flex;
+      flex: 2;
+    }
+
+    figure {
+      flex: 1;
     }
   </style>
 </head>
 
 <body>
+
   <header>
     <nav>
       <ul>
@@ -108,28 +131,98 @@
     </nav>
   </header>
 
-  <div class='flex-container'>
-    <div class="row">
-      <div class="col">
-        <div class="bar bar-b"></div>
+  <div class="bar">
+    <div class="bar bar-a">
+      <img style="background-position: center; background-repeat: no-repeat; max-width: 100%;"
+        src="Austin-Skyline-at-Night_111311076.jpg">
+    </div>
+  </div>
 
-        <div class="row">
-          <div class="bar bar-a">
-            <img style="background-position: center; background-repeat: no-repeat; max-width: 100%;"
-              src="Austin-Skyline-at-Night_111311076.jpg">
-          </div>
+  <div class="bar bar-b"></div>
+
+  <div class="flex-container">
+    <div class="flex-container1">
+      <div class="articles">
+        <article id="article1">
+          <figure class="article-image" id="target-image">
+            <img id="target-img" src="">
+          </figure>
+
+          <div class="article-body">
+            <div class="article-title">
+              <!-- obvi title -->
+              <h2 id='target-title'>This is where the first will append.</h2>
+              <h2 id='target-author'>This is where the author's name will go. </h2>
+            </div>
+            <p class="article-content" id='content-box'>This is where the text desc will go. </p>
+            <footer class="article-footer" id="source-text">Where the source is from. </footer>
+        </article>
+      </div>
+      <div class="flex-container1">
+
+        <div id="siteAds">Ads</div>
+        <div id="weather"></div>
+      </div>
+
+    </div>
+    <div class="flex-container">
+      <div class="flex-container1">
+
+        <article id="article2">
+          <div class="article-body2">
+            <div class="article-title2">
+              <!-- obvi title -->
+              <h2 id='target-title2'>This is where the first will append.</h2>
+              <h2 id='target-author2'>This is where the author's name will go. </h2>
+            </div>
+            <p class="article-content2" id='content-box2'>This is where the text desc will go. </p>
+            <footer class="article-footer2" id="source-text2">Where the source is from. </footer>
+        </article>
+      </div>
+    </div>
+
+    <article id="article3">
+      <figure class="article-image" id="target-image3">
+        <img id="target-img3" src="">
+      </figure>
+      <div class="article-body3">
+        <div class="article-title3">
+          <!-- obvi title -->
+          <h2 id='target-title3'>This is where the first will append.</h2>
+          <h2 id='target-author3'>This is where the author's name will go. </h2>
         </div>
+        <p class="article-content3" id='content-box3'>This is where the text desc will go. </p>
+        <footer class="article-footer3" id="source-text3">Where the source is from. </footer>
+    </article>
+  </div>
+  <div class="flex-container1">
 
+    <article id="article2">
 
-        <div class="flex-container"></div>
-        <div class="row">
-          <div class="col">1/3</div>
-          <div class="col">1/3</div>
-
-          <div class="col">1/3</div>
-
+      <div class="article-body2">
+        <div class="article-title2">
+          <!-- obvi title -->
+          <h2 id='target-title2'>This is where the first will append.</h2>
+          <h2 id='target-author2'>This is where the author's name will go. </h2>
         </div>
+        <p class="article-content2" id='content-box2'>This is where the text desc will go. </p>
+        <footer class="article-footer2" id="source-text2">Where the source is from. </footer>
+    </article>
+  </div>
+  </div>
 
+  <article id="article3">
+    <div class="article-body3">
+      <div class="article-title3">
+        <!-- obvi title -->
+        <h2 id='target-title3'>This is where the first will append.</h2>
+        <h2 id='target-author3'>This is where the author's name will go. </h2>
+      </div>
+      <p class="article-content3" id='content-box3'>This is where the text desc will go. </p>
+      <footer class="article-footer3" id="source-text3">Where the source is from. </footer>
+  </article>
+  <div id="siteAds3">Ads</div>
+</body>
 </body>
 
 </html>
