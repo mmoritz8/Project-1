@@ -34,8 +34,8 @@ function newsQuery(queryURL) {
             $(`.${newsTitles[i]}`).text(newsData.articles[i].title);
             $(`.${newsSubs[i]}`).text(newsData.articles[i].description);
             $(`.${newsPics[i]}`).attr('src', newsData.articles[i].urlToImage);
-            $(`.${newsPics[i]}`).wrap(`<a href="${newsData.articles[i].url}"></a>`);
-            $(`.${newsTitles[i]}`).wrap(`<a href="${newsData.articles[i].url}"></a>`);
+            $(`.${newsPics[i]}`).wrap(`<a class="picLink" href="${newsData.articles[i].url}"></a>`);
+            $(`.${newsTitles[i]}`).wrap(`<a class="titleLink" href="${newsData.articles[i].url}"></a>`);
         }
     })
 }
@@ -51,8 +51,8 @@ function investQuery(queryURL) {
             $(`.${investTitles[i]}`).text(invData.articles[i].title);
             $(`.${investSubs[i]}`).text(invData.articles[i].description);
             $(`.${investPics[i]}`).attr('src', invData.articles[i].urlToImage);
-            $(`.${investPics[i]}`).wrap(`<a href="${invData.articles[i].url}"></a>`);
-            $(`.${investTitles[i]}`).wrap(`<a href="${invData.articles[i].url}"></a>`);
+            $(`.${investPics[i]}`).wrap(`<a class="picLink" href="${invData.articles[i].url}"></a>`);
+            $(`.${investTitles[i]}`).wrap(`<a class="titleLink" href="${invData.articles[i].url}"></a>`);
         }
     })
 }

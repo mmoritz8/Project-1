@@ -31,11 +31,14 @@ h2, .sectionHead{
     font-family: 'Merriweather', serif; */
 }
 
-a {
+.titleLink {
     color: black;
 }
+.titleLink:hover {
+    color:black;
+}
 
-a:hover {
+.titleLink:visited {
     color: black;
 }
 
@@ -43,8 +46,8 @@ a:hover {
 .advertisement {
     margin-left: 3%;
     height: 1px;
-    /* position: sticky; */
-    top: 10px;
+    position: fixed;
+    top: 100px;
 }
 
 .advPic {
@@ -60,25 +63,34 @@ a:hover {
 /* This is for the Navbar */
 header {
     width: 100%;
-    position: sticky;
-    background-color: #232526;
-    margin-bottom: 50px;
-}
-
-nav {
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    padding: 5px;
-}
-
-li a {
-    color: white;
+    /* position: sticky; */
+    margin-bottom: 180px;
 }
 
 li {
     display: inline;
     margin-right: 30px;
-    border-left: 1px solid #000000;
     padding-left: 20px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+    background: #414547;
+}
+
+a:visited {
+    color: white;
+}
+
+.title-bar {
+    text-align: center;
+    background-color: #242729;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
