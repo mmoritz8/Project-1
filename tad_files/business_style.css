@@ -1,3 +1,4 @@
+/* This is for the basic business webpage */
 .busPageMain {
     font-weight: bold;
 }
@@ -30,19 +31,23 @@ h2, .sectionHead{
     font-family: 'Merriweather', serif; */
 }
 
-a {
+.titleLink {
+    color: black;
+}
+.titleLink:hover {
+    color:black;
+}
+
+.titleLink:visited {
     color: black;
 }
 
-a:hover {
-    color: black;
-}
-
+/* This is for the advertisement section if I choose to do it */
 .advertisement {
     margin-left: 3%;
     height: 1px;
-    /* position: sticky; */
-    top: 10px;
+    position: fixed;
+    top: 100px;
 }
 
 .advPic {
@@ -53,4 +58,39 @@ a:hover {
     .advertisement {
       display: none !important;
     }
+}
+
+/* This is for the Navbar */
+header {
+    width: 100%;
+    /* position: sticky; */
+    margin-bottom: 175px;
+}
+
+li {
+    display: inline;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+    background: #414547;
+}
+
+a:visited {
+    color: white;
+}
+
+.title-bar {
+    text-align: center;
+    background-color: #242729;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
