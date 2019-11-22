@@ -135,5 +135,8 @@ function adverts () {
 }
 adverts();
 
-
+$('.hangman').click(function() {
+    window.location.href="sandman.html";
+    return false;
+})
 
