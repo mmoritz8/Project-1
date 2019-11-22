@@ -22,7 +22,7 @@ var sportsPic = document.getElementsByClassName("picD");
 //Creating the URLs for business and finance sections
 var localURL = "https://newsapi.org/v2/everything?q=local+news&from=2019-11-20&to=2019-11-20&sortBy=popularity&pageSize=1&apiKey=d9da22da0a2347a58fea3976369ee1f1";
 var businessURL = "https://newsapi.org/v2/everything?apiKey=" + apiKey + "&" + catFinance + "&" + from + "&" + to + "&" + finDomains + "&" + sortBy;
-var lifestyleURL = "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=e38e2eb001e4bcda09aab86ee29f490";
+var lifestyleURL = "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=ce38e2eb001e4bcda09aab86ee29f490";
 var sportsURL = "https://newsapi.org/v2/everything?q=" + "Lamar Jackson" + "&apiKey=c6d47e8264e749ff85f4e6cc2155d4e6";
 
 
@@ -63,25 +63,25 @@ function lifestyleQuery(queryURL) {
         url: queryURL,
         method: "GET"
     }).then(function (newsData) {
-            $(lifestyleTitle).text(newsData.articles[0].title);
-            $(lifestyleSub).text(newsData.articles[0].description);
-            $(lifestylePic).attr('src', newsData.articles[0].urlToImage);
-            $(lifestylePic).wrap(`<a class="picLink" href="${newsData.articles[0].url}"></a>`);
-            $(lifestyleTitle).wrap(`<a class="titleLink" href="${newsData.articles[0].url}"></a>`);
+            $(lifestyleTitle).text(newsData.articles[1].title);
+            $(lifestyleSub).text(newsData.articles[1].description);
+            $(lifestylePic).attr('src', newsData.articles[1].urlToImage);
+            $(lifestylePic).wrap(`<a class="picLink" href="${newsData.articles[1].url}"></a>`);
+            $(lifestyleTitle).wrap(`<a class="titleLink" href="${newsData.articles[1].url}"></a>`);
     })
 }
-lifestyleQuery(businessURL);
+lifestyleQuery(lifestyleURL);
 
 function sportsQuery(queryURL) {
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function (newsData) {
-            $(sportsTitle).text(newsData.articles[0].title);
-            $(sportsSub).text(newsData.articles[0].description);
-            $(sportsPic).attr('src', newsData.articles[0].urlToImage);
-            $(sportsPic).wrap(`<a class="picLink" href="${newsData.articles[0].url}"></a>`);
-            $(sportsTitle).wrap(`<a class="titleLink" href="${newsData.articles[0].url}"></a>`);
+            $(sportsTitle).text(newsData.articles[2].title);
+            $(sportsSub).text(newsData.articles[2].description);
+            $(sportsPic).attr('src', newsData.articles[2].urlToImage);
+            $(sportsPic).wrap(`<a class="picLink" href="${newsData.articles[2].url}"></a>`);
+            $(sportsTitle).wrap(`<a class="titleLink" href="${newsData.articles[2].url}"></a>`);
     })
 }
 sportsQuery(sportsURL);
