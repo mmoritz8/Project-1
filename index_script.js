@@ -77,11 +77,11 @@ function sportsQuery(queryURL) {
         url: queryURL,
         method: "GET"
     }).then(function (newsData) {
-            $(sportsTitle).text(newsData.articles[0].title);
-            $(sportsSub).text(newsData.articles[0].description);
-            $(sportsPic).attr('src', newsData.articles[0].urlToImage);
-            $(sportsPic).wrap(`<a class="picLink" href="${newsData.articles[0].url}"></a>`);
-            $(sportsTitle).wrap(`<a class="titleLink" href="${newsData.articles[0].url}"></a>`);
+            $(sportsTitle).text(newsData.articles[2].title);
+            $(sportsSub).text(newsData.articles[2].description);
+            $(sportsPic).attr('src', newsData.articles[2].urlToImage);
+            $(sportsPic).wrap(`<a class="picLink" href="${newsData.articles[2].url}"></a>`);
+            $(sportsTitle).wrap(`<a class="titleLink" href="${newsData.articles[2].url}"></a>`);
     })
 }
 sportsQuery(sportsURL);
