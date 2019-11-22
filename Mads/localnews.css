@@ -19,6 +19,16 @@ li {
     margin-right: 30px;
     padding-left: 20px;
 }
+
+
+    .bar {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 20px;
+      background-color: steelblue;
+    }
+
+
 .a-header {
     color: white;
     font-weight: bold;
@@ -36,9 +46,7 @@ li {
 }
 
 h2, strong, .a-article{
-    color: rgb(0, 107, 0);
+    color: steelblue;
     font-family: 'Calistoga', cursive;
-    /* font-family: 'Playfair Display', serif;
-    font-family: 'Merriweather', serif; */
 }
 

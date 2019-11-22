@@ -1,5 +1,5 @@
-var quarterBack = ["t","o","m","b","r","a","d","y"];
-var incorrectAnswer = ["h","a","n","g","m","a","n"]; 
+var famousPerson = ["d","a","v","i","d","b","o","w","i","e"];
+var incorrectAnswer = ["s","a","n","g","m","a","n"]; 
 var userArray = [];
 var hangman = "";
 var answer = [];
@@ -11,10 +11,10 @@ var email;
       event.preventDefault();
     var response = $('#answer').val();
     response = response.toLowerCase();
-    if(quarterBack.includes(response)) {
+    if(famousPerson.includes(response)) {
         $("." + response).text(response);
         answer.push(response);
-        if(answer.length == quarterBack.length) {
+        if(answer.length == famousPerson.length) {
         $('.congrats').css('display', 'inline');
         $('.sweepstakes').css('display', 'inline');
         $('h3').css('display', 'none');
@@ -24,7 +24,7 @@ var email;
         $('h3').append(incorrectAnswer[i]);
         i++
     }
-    if(hangman == "hangman") {
+    if(hangman == "sangman") {
         $('.over').css('display', 'inline');
         $('.sweepstakes').css('display', 'inline');
     }
