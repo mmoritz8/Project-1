@@ -10,14 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        h1 {
-            text-align: center;
-            font-family: 'Pacifico', cursive;
-            color: #c31432;
-        }
-        #answer {
-            width: 20%;
-        }
+     
     </style>
 </head>
 <body data-gr-c-s-loaded="true">
@@ -30,21 +23,26 @@
               <input type="text" id="answer">
               <input type="submit" class="submit">
             </form> 
+            <h3>Hangman: <span class="hangman"></span></h3>
            <h2><span class="t"></span><span class="o"></span><span class="m"></span><span class="space"> </span><span class="b"></span><span class="r"></span><span class="a"></span><span class="d"></span><span class="y"></span></h2>
        </div>
+       <div class="row congrats">
+           <h1>Congratulations! You Win!</h1>
+       </div>
        <div class="row sweepstakes">
+           <h1 class="over">Game Over</h1>
            <h5>Please enter your name and email to enter our sweepstakes, as well as receive news alerts.</h3>
            <form>
                 Name:<br>
                 <input type="text" name="name" class="name"><br>
                 Email:<br>
                 <input type="email" name="email" class="email"><br>
-                <input type="button" class="button">
+                <input type="button" class="button" value="Submit">
            </form>
        </div>
        
    </div>
-</body>
+</body> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="../mattsfolder/js/app.js"></script>
 </html>
