@@ -1,0 +1,44 @@
+a:link, a:visited {
+    
+    text-decoration: none;
+    cursor: grab;
+  }
+  
+a:link:active, a:visited:active {
+    color: grey;
+    text-decoration: underline;
+  }
+
+header {
+    width: 100%;
+    position: sticky;
+    margin-bottom: 50px;
+}
+li {
+    display: inline;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+.a-header {
+    color: white;
+    font-weight: bold;
+}
+.a-header:hover {
+    color: white;
+    background: #414547;
+}
+.a-header:visited {
+    color: white;
+}
+.title-bar {
+    text-align: center;
+    background-color: #242729;
+}
+
+h2, strong, .a-article{
+    color: rgb(0, 107, 0);
+    font-family: 'Calistoga', cursive;
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif; */
+}
+
