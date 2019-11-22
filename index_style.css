@@ -99,6 +99,7 @@ header {
     margin-bottom: 165px;
 }
 
+/* This is for the Navbar */
 li {
     display: inline;
     margin-right: 30px;
@@ -118,6 +119,7 @@ a:hover {
 a:visited {
     color: white;
 }
+
 
 .title-bar {
     text-align: center;
