@@ -301,6 +301,23 @@
                     nav.toggleClass('hidden', scrollTop > prev);
                     prev = scrollTop;
                });
+
+               $.ajax({
+                    url: 'https://newsapi.org/v2/everything?sortBy=relevancy&q=+austin+texas+news&pageSize=2&apiKey=d9da22da0a2347a58fea3976369ee1f1',
+                    method: "GET",
+
+               }).then(function (response) {
+                    console.log(this);
+                    console.log(response.data);
+                    var results = response.data;
+                    var targetOne = document.getElementById("target");
+                    $('#target').empty();
+                    $("#target").text(response.articles[0].title + response.articles[0].author + response.articles[0].source.name);
+
+               });
+          });
+
+
      </script>
 </body>
 

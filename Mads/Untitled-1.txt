@@ -66,8 +66,8 @@ req.end(function (res) {
       console.log(response.data);
       var results = response.data;
       var targetOne = document.getElementById("target2");
-      $('#target2').empty();
-      $("#target2").text(response.articles[0].description + response.articles[0].title);
+      $('#target').empty();
+      $("#target").text(response.articles[0].description + response.articles[0].title);
 
 
     });
