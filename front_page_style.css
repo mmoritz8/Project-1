@@ -54,7 +54,7 @@ h2 {
 }
 
 .section-head-b {
-    color: purple;
+    color: #7303c0;
     font-family: 'Calistoga', cursive;
 }
 
@@ -125,4 +125,17 @@ a:visited {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+/* This is for the footer at the bottom of the page */
+
+.sticky-footer-css .footer {
+    height: 6rem;
+    background-color: #242729;
+    color: #fff;
+    padding-top: 0.75rem;
+    margin-left: 0rem;
+}
+#footer-title {
+    font-family: 'Calistoga', cursive;
 }

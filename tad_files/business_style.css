@@ -52,18 +52,18 @@ h2, .sectionHead{
 
 /* This is for the advertisement section if I choose to do it */
 .advertisement {
-    margin-left: 3%;
+    margin-left: 2%;
     height: 1px;
     position: fixed;
-    top: 80px;
+    top: 100px;
 }
 
 .adv-pic-a, .adv-pic-b {
-    margin-bottom: 100%;
+    margin-bottom: 80%;
     width: 80%;
 }
 
-@media only screen and (max-width: 1798px) {
+@media only screen and (max-width: 1760px) {
     .advertisement {
       display: none !important;
     }
@@ -101,4 +101,17 @@ a:visited {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+/* This is for the footer at the bottom of the page */
+
+.sticky-footer-css .footer {
+    height: 6rem;
+    background-color: #242729;
+    color: #fff;
+    padding-top: 0.75rem;
+    margin-left: 0rem;
+}
+#footer-title {
+    font-family: 'Calistoga', cursive;
 }
