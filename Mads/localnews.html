@@ -1,270 +1,148 @@
 <!DOCTYPE html>
-<html class="gr__foundation_zurb_com" lang="en">
 
 <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Austin Tribune</title>
-     <script src="https://code.jquery.com/jquery.js"></script>
-
-
-     <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
      <meta class="foundation-mq">
-     <script type="text/javascript" src="localnews.js"></script>
-     <style>
-          header {
-               width: 100%;
-               position: sticky;
-               background-color: #232526;
-               margin-bottom: 50px;
-          }
 
-          nav {
-               text-align: left;
-               color: white;
-               font-size: 18px;
-               padding: 5px;
-          }
+     <title>Austin Tribune - LOCAL</title>
 
-          .bar {
-               width: 100%;
-               height: 30px;
-               margin-bottom: 20px;
-               background-color: steelblue;
-          }
-
-          li a {
-               color: white;
-          }
-
-          li {
-               display: inline;
-               margin-right: 30px;
-               border-left: 1px solid #000000;
-               padding-left: 20px;
-          }
-     </style>
+     <link rel="stylesheet" href="foundation-6.5.1-complete/css/foundation.css">
+     <link rel="stylesheet" href="localnews.css">
+     <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
 </head>
 
-<body data-gr-c-s-loaded="true">
-     <br>
-     <br>
-     <!-- <div class="column large-1 advertisement">
-<img class="advPic" src="../assets/Images/tdAmeritrade.jpg">
-<br>
-<img class="advPic" src="../assets/Images/marketWatch.png">
-<br>
-<img class="advPic" src="../assets/Images/invesco.jpg">
-<br>
-<img class="advPic" src="../assets/Images/fidelity.png">
-<br>
-</div> -->
-
+<body>
      <header>
-          <nav>
-               <ul>
-                    <li><a href='../index.html'>Home</a></li>
-                    <li><a href='../local.html'>Local</a></li>
-                    <li><a href='../business.html'>Business</a></li>
-                    <li><a href='sports.html'>Sports</a></li>
-                    <li><a href='lifestyle.html'>Lifestyle</a></li>
-                    <li><a href='lifestyle.html'>About Us</a></li>
-                    <li><a href='lifestyle.html'>Contact</a></li>
+          <nav class="title-bar">
+               <ul class="vertical meium-horizontal large-horizontal menu">
+                    <li><a class="navbarLink" href="#">Home</a></li>
+                    <li><a class="navbarLink" href="#">Local</a></li>
+                    <li><a class="navbarLink" href="#">Business</a></li>
+                    <li><a class="navbarLink" href="#">Lifestyle</a></li>
+                    <li><a class="navbarLink" href="#">Sports</a></li>
                </ul>
           </nav>
      </header>
-     <div class="row busPageMainRow">
-          <div class="small-12 medium-12 large-9 column busPageMainArticle">
-               <div class="bar-a">
-                    <img style="background-position: center; background-repeat: no-repeat; max-width: 100%;"
-                         src="Austin-Skyline-at-Night_111311076.jpg">
-               </div>
-               <h2 class="busPageMain titleA"></h2>
-               <p class="busPageMainSub subheader subA"></p>
-          </div>
-          <div class="small-12 medium-12 large-3 column busPageMainPic">
-               <img class="picA" src="../assets/Images/busPageMainPic.jpg" alt="Main Finance Headline Image">
+     <div class='row'>
+          <div class="column">
+               <div class='bar'></div>
           </div>
      </div>
 
      <div class="container">
-          <div class="row column">
-               <hr>
-               <div class="bar"></div>
-
-          </div>
-          <div class="row column">
-               <p class="lead sectionHead"><strong>Finance</strong></p>
-          </div>
-          <div class="row bodyRowA small-up-2 medium-up-3 large-up-4">
-               <div class="column">
-                    <div class="bodyColA">
-                         <p><img class="picB" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-                         </p>
-                         <p class="lead titleB"></p>
-                         <p class="subheader subB"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColB">
-                         <p><img class="picC" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-                         </p>
-                         <p class="lead titleC"></p>
-                         <p class="subheader subC"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColC">
-                         <p><img class="picD" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-                         </p>
-                         <p class="lead titleD"></p>
-                         <p class="subheader subD"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColD">
-                         <p><img class="picE" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-                         </p>
-                         <p class="lead titleE"></p>
-                         <p class="subheader subE"></p>
-                    </div>
-               </div>
-          </div>
-
-          <div class="row bodyRowB small-up-2 medium-up-3 large-up-4">
-               <div class="column">
-                    <div class="bodyColA">
-                         <p><img class="picF" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-                         </p>
-                         <p class="lead titleF"></p>
-                         <p class="subheader subF"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColB">
-                         <p><img class="picG" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-                         </p>
-                         <p class="lead titleG"></p>
-                         <p class="subheader subG"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColC">
-                         <p><img class="picH" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-                         </p>
-                         <p class="lead titleH"></p>
-                         <p class="subheader subH"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColD">
-                         <p><img class="picI" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-                         </p>
-                         <p class="lead titleI"></p>
-                         <p class="subheader subI"></p>
-                    </div>
-               </div>
-          </div>
-
-          <div class="row column">
-               <hr>
-          </div>
-          <div class="row column">
-               <p class="lead sectionHead"><strong>Investing</strong></p>
-          </div>
-          <div class="row bodyRowC small-up-2 medium-up-3 large-up-4">
-               <div class="column">
-                    <div class="bodyColA">
-                         <p><img class="picJ" src="../assets/Images/businessImage.jpg" alt="Investing ImageG">
-                         </p>
-                         <p class="lead titleJ"></p>
-                         <p class="subheader subJ"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColB">
-                         <p><img class="picK" src="../assets/Images/businessImage.jpg" alt="Investing ImageH">
-                         </p>
-                         <p class="lead titleK"></p>
-                         <p class="subheader subK"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColC">
-                         <p><img class="picL" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
-                         </p>
-                         <p class="lead titleL"></p>
-                         <p class="subheader subL"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColD">
-                         <p><img class="picM" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
-                         </p>
-                         <p class="lead titleM"></p>
-                         <p class="subheader subM"></p>
-                    </div>
-               </div>
-          </div>
-
-          <div class="row bodyRowD small-up-2 medium-up-3 large-up-4">
-               <div class="column">
-                    <div class="bodyColA">
-                         <p><img class="picN" src="../assets/Images/businessImage.jpg" alt="Investing ImageJ">
-                         </p>
-                         <p class="lead titleN"></p>
-                         <p class="subheader subN"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColB">
-                         <p><img class="picO" src="../assets/Images/businessImage.jpg" alt="Investing ImageK">
-                         </p>
-                         <p class="lead titleO"></p>
-                         <p class="subheader subO"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColC">
-                         <p><img class="picP" src="../assets/Images/businessImage.jpg" alt="Investing ImageL">
-                         </p>
-                         <p class="lead titleP"></p>
-                         <p class="subheader subP"></p>
-                    </div>
-               </div>
-               <div class="column">
-                    <div class="bodyColD">
-                         <p><img class="picQ" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
-                         </p>
-                         <p class="lead titleQ"></p>
-                         <p class="subheader subQ"></p>
-                    </div>
-               </div>
-          </div>
           <div class="row">
-               <div class="row small-up-2">
-                    <div class="column">
-                         <img class="ad-image">
+               <div class="column">
+                    <div class="article-row-section">
+                         <div class="article-row-section-inner">
+
+                              <h2 class="article-row-section-header">Austin's Local News</h2>
+                              <div class='column'>
+                                   <hr>
+                                   <br>
+                                   <div class="responsive-blog-post">
+                                        <div class="individual-post">
+                                             <h4>Title of Article</h4>
+                                             <p class="date">Date</p>
+                                             <img src="https://placehold.it/900x450">
+                                             <p> First few sentences of blog post show here and then eventually cuts
+                                                  out.
+                                                  First few sentences of blog post
+                                                  show here and then eventually cuts out. First few sentences of blog
+                                                  post
+                                                  show here and then eventually
+                                                  cuts out...</p>
+                                             <a class="button" href="#">Read On</a>
+                                        </div>
+                                   </div>
+
+
+                              </div>
+                         </div>
+                         <div class="medium-2 columns">
+
+                         </div>
                     </div>
-                    <div class="column hangman">
-                         <p class="h3">
-                              <a href="astrogame.html">
-                                   <iframe style="height: 400px; width:400px"
-                                        src="file:///Users/nanaem808Nanaem808-MBP/Project-1/Mads/astrogame.html"></iframe>
-                              </a>
-                              <h1>Play to Win!</h1>
-                         </p>
-                    </div>
+
                </div>
+               <a href="#">
+                    <article class="article-row">
+                         <div class="article-row-img">
+                              <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
+                         </div>
+                         <div class="article-row-content">
+                              <h1 class="article-row-content-header">HOW SPENDING $162,301.42 ON
+                                   CLOTHES MADE ME $692,500
+                              </h1>
+
+                              <p class="article-row-content-description">Lorem ipsum dolor sit amet,
+                                   consectetur adipisicing
+                                   elit. Deserunt quia sit ullam, assumenda et. est at. Minima cum
+                                   enim, vero eligendi
+                                   perspiciatis similique modi voluptatem officia fugiat.</p>
+
+                              <p class="article-row-content-author">By Yeti</p>
+                              <time class="article-row-content-time" datetime="2008-02-14 20:00">July 14th
+                                   2021</time>
+                         </div>
+                    </article>
+               </a>
+
+               <a href="#">
+                    <article class="article-row">
+                         <div class="article-row-img">
+                              <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
+                         </div>
+                         <div class="article-row-content">
+                              <h1 class="article-row-content-header">HOW I’M GOING TO LOSE ALL MY
+                                   CUSTOMERS AND WRECK MY
+                                   BUSINESS</h1>
+
+                              <p class="article-row-content-description">Lorem ipsum dolor sit amet,
+                                   consectetur cupiditate,
+                                   unde libero quisquam ipsam debitis earum omnis aperiam nulla
+                                   eaque vitae error optio
+                                   tempora voluptatem, quae impedit laborum placeat. Expedita!</p>
+
+                              <p class="article-row-content-author">By Yeti</p>
+                              <time class="article-row-content-time" datetime="2008-02-14 20:00">July 14th
+                                   2021</time>
+                         </div>
+                    </article>
+                    <br>
+                    <hr>
+               </a>
+
           </div>
+     </div>
+
+     </div>
+     <div class="row small-up-2">
+          <div class="column text-right">
+               <h3 class="h5"> Let's Play Hangman!</h3>
+          </div>
+          <div class="small-up-2">
+               <h5 class="h6 text-right">Click Inside the Box and press any key!</h5>
+
+               <a href="astrogame.html">
+                    <iframe style="height: 400px; width:400px; border-color: black 1px solid;"
+                         src="file:///Users/nanaem808Nanaem808-MBP/Project-1/Mads/astrogame.html"></iframe>
+               </a>
+
+          </div>
+     </div>
+
+     </div>
+     </div>
      </div>
      </div>
 
-     <footer>
-          <div class="footer">
-     </footer>
+
+     <script src="foundation-6.5.1-complete/js/vendor/jquery.js"></script>
+     <script src="foundation-6.5.1-complete/js/vendor/what-input.js"></script>
+     <script src="foundation-6.5.1-complete/js/vendor/foundation.js"></script>
+     <script src="foundation-6.5.1-complete/js/app.js"></script>
+
 </body>
 
 </html>
