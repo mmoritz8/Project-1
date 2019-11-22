@@ -163,18 +163,19 @@ h5 {
 }
 
 .contact-head {
-    color: #757F9A;
+    color: #434343;
     font-weight: bold;
     text-align: left;
 }
 .contact-name {
-    width: 400px;
+    width: 500px;
 }
 
 #map {
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     float: left;
+    margin-bottom: 50px;
 }
 
 .row3 {
@@ -189,9 +190,18 @@ margin-bottom: 10%;
 .contact-container {
     width: 500px;
     float: left;
+    margin-left: 20%;
 }
 .address {
     margin-left: 20px;
     font-family: serif;
     font-size: 22px;
+}
+.directions {
+    float: left;
+  
+}
+
+.contact-background {
+    background-color: #86A8E7;
 }
