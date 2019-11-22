@@ -46,3 +46,8 @@ newUser = {
   window.localStorage.setItem('users', JSON.stringify(userArray));
 })
 
+function myMap() {
+var contactAPI = "AIzaSyAoS0EuGwX4-XLp3J2JcSWgS7uk4dh1DRw";
+var queryURL = "https://maps.googleapis.com/maps/api/js?key=" + contactAPI + "&callback=initMap"
+
+}

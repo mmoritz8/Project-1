@@ -8,8 +8,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
     <meta class="foundation-mq">
     <link rel="stylesheet" href="style.css">
-    
+    <style>
+           @media only screen and (max-width: 700px) {
+            .container {
+                margin-top: 30%;
+            }
+           } 
+     </style>  
 </head>
+
 
 <body class="contact-background">
         <header>
@@ -27,36 +34,35 @@
         <div class="row row1">
             <h1 class="contact-head">Contact Us</h1>
         </div>
-        <div class="row small-up-3 medium-up-3 large-up-3">
-            <div class="column">
-                <h5 class="contact-left">Name:</h5>
-            </div>
-            <div class="column">
-                <input type="text" class="contact-name">
-            </div>
-        </div>
-        <div class="row small-up-3 medium-up-3 large-up-3">
-            <div class="column">
-                <h5 class="contact-left">Email:</h5>
-            </div>
-            <div class="column">
-                <input type="email" class="contact-name">
-            </div>
-        </div>
-        <div class="row small-up-3 medium-up-3 large-up-3">
-            <div class="column">
-                <h5 class="contact-left">Message:</h5>
-            </div>
-            <div class="column">
-                <textarea id="subject" placeholder="Write something..."></textarea>
-            </div>
-        </div>
+       
+        <input type="text" class="contact-name" placeholder="Name">
+        <input type="email" class="contact-name" placeholder="Email">
+        <textarea class="contact-name" placeholder="Write something..."></textarea>
     </div>
-    
+    <div>
+        <div id="map"></div>
+       
+    </div>
 </body>
 <script>
+    var map;
+    var marker;
+    var myLatLng = {lat: 30.287, lng: -97.729};
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 11
+      });
+      marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Our Headquarters'
+      });
 
-</script>
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoS0EuGwX4-XLp3J2JcSWgS7uk4dh1DRw&callback=initMap"
+  async defer></script>
 </html>
 
 

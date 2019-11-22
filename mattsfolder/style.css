@@ -157,3 +157,41 @@ transition: all 0.15s;
 .over {
     display: none;
 }
+
+h5 {
+    margin-left: 40%;
+}
+
+.contact-head {
+    color: #757F9A;
+    font-weight: bold;
+    text-align: left;
+}
+.contact-name {
+    width: 400px;
+}
+
+#map {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+.row3 {
+margin-top: 50px;
+margin-bottom: 10%;
+}
+
+.last {
+    margin-left: 15%;
+}
+
+.contact-container {
+    width: 500px;
+    float: left;
+}
+.address {
+    margin-left: 20px;
+    font-family: serif;
+    font-size: 22px;
+}
