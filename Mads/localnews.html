@@ -8,12 +8,18 @@
 
      <title>Austin Tribune - Local News</title>
      <!-- Load jQuery -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <!-- Add  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+     <script src="https://code.jquery.com/jquery.js"></script>
+
      <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
-     <script type="stylesheet" src="localnews.js"></script>
+
      <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
+     <meta class="foundation-mq">
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="localnews.css">
+     <script type="text/javascript" src="localnews.js"></script>
+     <script type="text/javascript" src="mattsfolder/js/app.js"></script>
      <style>
           * {
                box-sizing: border-box;
@@ -220,11 +226,53 @@
           </div>
      </div>
 
+     <div class="container">
+          <div class="row">
+               <h1>Sports Hangman</h1>
+               <h5>Guess this sports trivia question for a chance to win $500! After you complete the game, enter your
+                    name
+                    and email to be entered in the sweepstakes.</h5>
+               <p>"Who holds the single season passing touchdown record in the NFL?"</p>
+               <form>
+                    <input type="text" id="answer">
+                    <input type="submit" class="submit">
+               </form>
+               <h3>Hangman: <span class="hangman"></span></h3>
+               <h2><span class="t"></span><span class="o"></span><span class="m"></span><span class="space">
+                    </span><span class="b"></span><span class="r"></span><span class="a"></span><span
+                         class="d"></span><span class="y"></span></h2>
+          </div>
+          <div class="row congrats">
+               <h1>Congratulations! You Win!</h1>
+          </div>
+          <div class="row sweepstakes">
+               <h1 class="over">Game Over</h1>
+               <h5>Please enter your name and email to enter our sweepstakes, as well as receive news alerts.</h3>
+                    <form>
+                         Name:<br>
+                         <input type="text" name="name" class="name"><br>
+                         Email:<br>
+                         <input type="email" name="email" class="email"><br>
+                         <input type="button" class="button" value="Submit">
+                    </form>
+          </div>
+
+     </div>
+
      <footer>
           <div class="footer">
      </footer>
-     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+     <script type="text/javascript" src="localnews.js"></script>
+     <script>
+          (document).ready(function () {
+
+               $('.hangman').click(function () {
+                    window.location.href = "hangman.html";
+                    return false;
+               })
+          });
+
+     </script>
 </body>
 
 </html>
