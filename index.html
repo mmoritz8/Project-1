@@ -2,257 +2,115 @@
 <html class="gr__foundation_zurb_com" lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Austin Tribune</title>
-  <script src="https://code.jquery.com/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Tribune</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
+    <meta class="foundation-mq">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
-  <meta class="foundation-mq">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="business_style.css">
-  <script type="text/javascript" src="business_script.js"></script>
-  <style>
-    header {
-      width: 100%;
-      position: sticky;
-      background-color: #232526;
-      margin-bottom: 50px;
-    }
-
-    nav {
-      text-align: left;
-      color: white;
-      font-size: 18px;
-      padding: 5px;
-    }
-
-    .bar {
-      width: 100%;
-      height: 30px;
-      margin-bottom: 20px;
-      background-color: turquoise;
-    }
-
-    li a {
-      color: white;
-    }
-
-    li {
-      display: inline;
-      margin-right: 30px;
-      border-left: 1px solid #000000;
-      padding-left: 20px;
-    }
-  </style>
+    <link rel="stylesheet" type="text/css" href="index_style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="index_script.js"></script>
 </head>
 
 <body data-gr-c-s-loaded="true">
-  <br>
-  <br>
-  <!-- <div class="column large-1 advertisement">
-        <img class="advPic" src="../assets/Images/tdAmeritrade.jpg">
-        <br>
-        <img class="advPic" src="../assets/Images/marketWatch.png">
-        <br>
-        <img class="advPic" src="../assets/Images/invesco.jpg">
-        <br>
-        <img class="advPic" src="../assets/Images/fidelity.png">
-        <br>
-    </div> -->
+    <!-- This sections is for the HTML Navbar -->
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href='../index.html'>Home</a></li>
-        <li><a href='../local.html'>Local</a></li>
-        <li><a href='../business.html'>Business</a></li>
-        <li><a href='sports.html'>Sports</a></li>
-        <li><a href='lifestyle.html'>Lifestyle</a></li>
-        <li><a href='lifestyle.html'>About Us</a></li>
-        <li><a href='lifestyle.html'>Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="row busPageMainRow">
-    <div class="small-12 medium-12 large-9 column busPageMainArticle">
-      <div class="bar-a">
-        <img style="background-position: center; background-repeat: no-repeat; max-width: 100%;"
-          src="Austin-Skyline-at-Night_111311076.jpg">
-      </div>
-      <h2 class="busPageMain titleA"></h2>
-      <p class="busPageMainSub subheader subA"></p>
-    </div>
-    <div class="small-12 medium-12 large-3 column busPageMainPic">
-      <img class="picA" src="../assets/Images/busPageMainPic.jpg" alt="Main Finance Headline Image">
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row column">
-      <hr>
-      <div class="bar"></div>
-
+    <header>
+        <nav class="title-bar">
+            <ul class="horizontal meium-horizontal large-horizontal menu">
+                <li><a class="navbarLink" href="index.html">Home</a></li>
+                <li><a class="navbarLink" href="Mads/localnews.html">Local</a></li>
+                <li><a class="navbarLink" href="tad_files/business.html">Business</a></li>
+                <li><a class="navbarLink" href="Joel_art/arts.html">Lifestyle</a></li>
+                <li><a class="navbarLink" href="mattsfolder/sports.html">Sports</a></li>
+                <li><a class="navbarLink" href='mattsfolder/contact.html'>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <!-- This is the main header section with the Austin Tribune picture -->
+    <div class="row column main-header">
+        <div class="small-12 medium-12 large-12 column main-page-header">
+            <img src="./assets/Images/Austin-Skyline-at-Night_111311076.jpg">
+        </div>
     </div>
     <div class="row column">
-      <p class="lead sectionHead"><strong>Finance</strong></p>
-    </div>
-    <div class="row bodyRowA small-up-2 medium-up-3 large-up-4">
-      <div class="column">
-        <div class="bodyColA">
-          <p><img class="picB" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-          </p>
-          <p class="lead titleB"></p>
-          <p class="subheader subB"></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="bodyColB">
-          <p><img class="picC" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-          </p>
-          <p class="lead titleC"></p>
-          <p class="subheader subC"></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="bodyColC">
-          <p><img class="picD" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-          </p>
-          <p class="lead titleD"></p>
-          <p class="subheader subD"></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="bodyColD">
-          <p><img class="picE" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-          </p>
-          <p class="lead titleE"></p>
-          <p class="subheader subE"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row bodyRowB small-up-2 medium-up-3 large-up-4">
-      <div class="column">
-        <div class="bodyColA">
-          <p><img class="picF" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-          </p>
-          <p class="lead titleF"></p>
-          <p class="subheader subF"></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="bodyColB">
-          <p><img class="picG" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-          </p>
-          <p class="lead titleG"></p>
-          <p class="subheader subG"></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="bodyColC">
-          <p><img class="picH" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-          </p>
-          <p class="lead titleH"></p>
-          <p class="subheader subH"></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="bodyColD">
-          <p><img class="picI" src="../assets/Images/businessImage.jpg" alt="Finance Image">
-          </p>
-          <p class="lead titleI"></p>
-          <p class="subheader subI"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row column">
-      <hr>
+        <p class="lead section-head-main"><strong>Local</strong></p>
     </div>
     <div class="row column">
-      <p class="lead sectionHead"><strong>Investing</strong></p>
+        <hr>
     </div>
-    <div class="row bodyRowC small-up-2 medium-up-3 large-up-4">
-      <div class="column">
-        <div class="bodyColA">
-          <p><img class="picJ" src="../assets/Images/businessImage.jpg" alt="Investing ImageG">
-          </p>
-          <p class="lead titleJ"></p>
-          <p class="subheader subJ"></p>
+    <!-- This is the main article section on the front page (local news/Maddie) -->
+    <div class="row front-page-main-row">
+        <div class="small-12 medium-12 large-9 column front-page-main-rticle">
+            <h2 class="front-page-main titleA"></h2>
+            <p class="front-page-main-sub subheader subA"></p>
         </div>
-      </div>
-      <div class="column">
-        <div class="bodyColB">
-          <p><img class="picK" src="../assets/Images/businessImage.jpg" alt="Investing ImageH">
-          </p>
-          <p class="lead titleK"></p>
-          <p class="subheader subK"></p>
+        <div class="small-12 medium-12 large-3 column front-page-main-pic">
+            <img class="picA" src="assets/Images/mad_front_page.jpg" alt="Main Local News Headline Image">
         </div>
-      </div>
-      <div class="column">
-        <div class="bodyColC">
-          <p><img class="picL" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
-          </p>
-          <p class="lead titleL"></p>
-          <p class="subheader subL"></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="bodyColD">
-          <p><img class="picM" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
-          </p>
-          <p class="lead titleM"></p>
-          <p class="subheader subM"></p>
-        </div>
-      </div>
     </div>
 
-    <div class="row bodyRowD small-up-2 medium-up-3 large-up-4">
-      <div class="column">
-        <div class="bodyColA">
-          <p><img class="picN" src="../assets/Images/businessImage.jpg" alt="Investing ImageJ">
-          </p>
-          <p class="lead titleN"></p>
-          <p class="subheader subN"></p>
+    <!-- This is the bottom section that contains the other three pages main headline -->
+    <div class="container">
+        <div class="row column">
+            <hr>
         </div>
-      </div>
-      <div class="column">
-        <div class="bodyColB">
-          <p><img class="picO" src="../assets/Images/businessImage.jpg" alt="Investing ImageK">
-          </p>
-          <p class="lead titleO"></p>
-          <p class="subheader subO"></p>
+        <div class="row bodyRowA small-up-1 medium-up-3 large-up-3">
+            <div class="column">
+                <div>
+                    <p class="lead section-head-a"><strong>Business</strong></p>
+                </div>
+                <div class="bodyColA">
+                    <p><img class="picB" src="assets/Images/businessImage.jpg" alt="Main Finance Headline Image">
+                    </p>
+                    <p class="lead titleB"></p>
+                    <p class="subheader subB"></p>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <p class="lead section-head-b"><strong>Lifestyle</strong></p>
+                </div>
+                <div class="bodyColB">
+                    <p><img class="picC" src="assets/Images/joel_front_page.jpg" alt="Main Lifestyle Headline Image">
+                    </p>
+                    <p class="lead titleC"></p>
+                    <p class="subheader subC"></p>
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <p class="lead section-head-c"><strong>Sports</strong></p>
+                </div>
+                <div class="bodyColC">
+                    <p><img class="picD" src="assets/Images/matt_front_page.jpg" alt="Main Sports Headline Image">
+                    </p>
+                    <p class="lead titleD"></p>
+                    <p class="subheader subD"></p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="bodyColC">
-          <p><img class="picP" src="../assets/Images/businessImage.jpg" alt="Investing ImageL">
-          </p>
-          <p class="lead titleP"></p>
-          <p class="subheader subP"></p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="bodyColD">
-          <p><img class="picQ" src="../assets/Images/businessImage.jpg" alt="Investing ImageI">
-          </p>
-          <p class="lead titleQ"></p>
-          <p class="subheader subQ"></p>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="footer">
-  </footer>
+    <!-- This section is for the footer -->
+    <div class="sticky-footer-css">
+        <div class="columns shrink footer text-center">
+            <h6 id="footer-title">Austin Tribune ©</h6>
+            <ul class="menu align-center">
+                <li><a class="navbarLink" href="index.html" style="color: white">Front Page</a></li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 
 </html>
