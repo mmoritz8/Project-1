@@ -1,0 +1,68 @@
+
+
+header {
+    width: 100%;
+    position: sticky;
+    margin-bottom: 50px;
+}
+li {
+    display: inline;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+.a-header {
+    color: white;
+    font-weight: bold;
+}
+.a-header:hover {
+    color: white;
+    background: #414547;
+}
+.a-header:visited {
+    color: white;
+}
+
+
+.title-bar {
+    text-align: center;
+    background-color: #242729;
+}
+
+h2, strong, .a-article{
+    color: #7303c0;
+    font-family: 'Calistoga', cursive;
+    
+}
+h1 {
+    text-align: center;
+    padding-top: 10%; 
+    font-family: 'Pacifico', cursive;
+    color: #7303c0;
+}
+.game {
+    text-align: center;
+    /* padding: 10%;  */
+    font-family: 'Pacifico', cursive;
+    color: #7303c0;
+}
+  
+.sticky-footer-css .footer {
+    height: 6rem;
+    background-color: #242729;
+    color: #fff;
+    padding-top: 0.75rem;
+}
+
+#footer-title {
+    font-family: 'Calistoga', cursive;  
+}
+  
+.navbarLink:hover {
+    color: white;
+    background: #414547;
+} 
+  
+ 
+  
+  
+  

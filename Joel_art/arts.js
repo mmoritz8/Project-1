@@ -14,13 +14,13 @@ $.ajax({
 }).then(function(response) {
     // console.log(response);
     $(".headline-img").empty();
-    $(".headline-img").append("<img>").attr("src", response.articles[0].urlToImage); //change index of articles to [i] when this is in the for loop using other url/ajax.
+    $(".headline-img").append("<img>").attr("src", response.articles[1].urlToImage); 
     $(".headline-title").empty();
-    $(".headline-title").append(response.articles[0].title);
+    $(".headline-title").append(response.articles[1].title);
     $(".headline-sum").empty();
-    $(".headline-sum").append(response.articles[0].description);
+    $(".headline-sum").append(response.articles[1].description);
     $(".headline-div").on("click", function() {
-        window.open(response.articles[0].url, '_blank');   
+        window.open(response.articles[1].url, '_blank');   
     })
 })
 }
@@ -121,6 +121,19 @@ var artAppender = function(x) {
 
 
 
+function adverts () {
+    var i = 0;
+    var  interval = setInterval(function(){
+    var images = ['images/target.jpeg', 'images/dickssportinggoods.jpeg', 'images/whataburger.jpeg'];
+    // var i = 0;
+    $('.ad-image').attr('src', images[i]);
+    i++
+    if(i > images.length) {
+    i = 0
+    }
+    },3000);
+}
+adverts();
 
 
 
