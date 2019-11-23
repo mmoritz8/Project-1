@@ -54,10 +54,12 @@ h1 {
     background-color: #242729;
     color: #fff;
     padding-top: 0.75rem;
-    margin-left: 0rem;
+    margin-left: 0rem;       
+}
+
+#footer-game {
     position: fixed;
     bottom: 0;
-        
 }
 
 #footer-title {
@@ -97,25 +99,12 @@ a {
     font-weight: bold;
 }
 
-a:hover {
-    color: white;
-    background: #414547;
-}
-
-a:visited {
-    color: white;
-}
-
 .title-bar {
     text-align: center;
     background-color: #242729;
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.congrats {
-    /* display: none; */
 }
 
 #answer {
@@ -179,3 +168,4 @@ input {
 form {
     margin-bottom: 1rem;
 }
+
