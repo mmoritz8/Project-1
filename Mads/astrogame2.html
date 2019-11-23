@@ -5,49 +5,77 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Zodiac Hangman</title> 
+     <title>Austin Tribune - LOCAL</title>
+     <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+     <meta class="foundation-mq">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
+     <link rel='text/css' href="/tad_files/business_style.css">
+     <style>
+          .bar {
+               width: 100%;
+               height: 30px;
+               margin-bottom: 20px;
+               background-color: #1AA883;
+          }
 
+          h2,
+          h1,
+          .sectionHead {
+               color: #1AA883;
+               font-family: 'Calistoga', cursive;
+               /* font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif; */
+          }
+
+          h1 {
+               font-family: 'Pacifico', cursive;
+          }
+     </style>
 </head>
 
 <body>
-     <div class="container">
-          <div class="jumbotron">
-               <p> Spell That Zodiac!</p>
-          </div>
-
-          <div class="panel panel-default">
-               <div class="panel-heading">
-                    <h3 class="panel-title"> Word to Guess</h3>
+     <div class="row">
+          <div class="column">
+               <div class="jumbotron">
+                    <h1> Spell That Zodiac!</h1>
                </div>
-               <div class="panel-body">
-                    <h2 id="wordToGuess"></h2>
-               </div>
-          </div>
 
-          <div class="panel panel-default">
-               <div class="panel-body">
-                    Wrong Guesses: <span id="wrongGuesses"> </span>
+               <div class="panel panel-default">
+                    <div class="panel-heading">
+                         <h3 class="panel-title"> Word to Guess</h3>
+                    </div>
+                    <div class="panel-body">
+                         <h2 id="wordToGuess"></h2>
+                    </div>
                </div>
-          </div>
 
-          <div class="panel panel-default">
-               <div class="panel-body">
-                    Guesses Left: <span id="numGuesses">9</span>
+               <div class="panel panel-default">
+                    <div class="panel-body">
+                         Wrong Guesses: <span id="wrongGuesses"> </span>
+                    </div>
                </div>
-          </div>
 
-          <div class="panel panel-default">
-               <div class="panel-body">
-                    Win Counter: <span id="winCounter">0</span>
+               <div class="panel panel-default">
+                    <div class="panel-body">
+                         Guesses Left: <span id="numGuesses">9</span>
+                    </div>
                </div>
-          </div>
 
-          <div class="panel panel-default">
-               <div class="panel-body">
-                    Loss Counter: <span id="lossCounter"> 0 </span>
+               <div class="panel panel-default">
+                    <div class="panel-body">
+                         Win Counter: <span id="winCounter">0</span>
+                    </div>
+               </div>
+
+               <div class="panel panel-default">
+                    <div class="panel-body">
+                         Loss Counter: <span id="lossCounter"> 0 </span>
+                    </div>
                </div>
           </div>
      </div>
+
      <script type="text/javascript">
 
           var wordOptions = ["capricorn", "aquarius", "aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "pisces", "sagittarius"];

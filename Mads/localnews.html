@@ -19,12 +19,24 @@
                background-color: #1AA883;
           }
 
+          li,
+          a.navbarLink,
+          header,
+          navbar {
+               color: white;
+               font-family: 'Calistoga', cursive;
+               text-align: center;
+
+          }
+
           h2,
-          .sectionHead {
+          .sectionHead,
+          .subheader,
+          .lead {
                color: #1AA883;
                font-family: 'Calistoga', cursive;
                /* font-family: 'Playfair Display', serif;
-    font-family: 'Merriweather', serif; */
+font-family: 'Merriweather', serif; */
           }
      </style>
 </head>
@@ -43,38 +55,44 @@
                </ul>
           </nav>
      </header>
-     <div class="bar"></div>
-
-     <hr>
-     <div class="row column main-header">
-          <div class="column align-center">
-               <div class="small-12 medium-12 large-12 column main-page-header">
-                    <img src="file:///Users/nanaem808Nanaem808-MBP/Project-1/assets/Images/Austin-Skyline-at-Night_111311076.jpg"
-                         alt="Header">
-               </div>
+     <div class="row">
+          <div class="column">
+               <div class="bar"></div>
           </div>
      </div>
+
+     <figure>
+          <hr>
+          <div class="row column main-header">
+               <div class="column align-center">
+                    <div class="small-12 medium-12 large-12 column main-page-header">
+                         <img src="file:///Users/nanaem808Nanaem808-MBP/Project-1/assets/Images/Austin-Skyline-at-Night_111311076.jpg"
+                              alt="Header">
+                    </div>
+               </div>
+          </div>
+     </figure>
      <hr>
      <div class='row'>
-          <div class=" columns">
+          <div class="columns">
                <!-- nested row -->
                <div class="row">
                     <div class="column">
                          <!-- first article -->
-                         <div id='first' class="post-item">
-                              <h2 id='first-title' styeclass="post-title">Post title place-holder</h2>
-
-                              <a id='href="#" class="post-thumbnail">
-                                   <img style="height: 350; width: 700;"
-                                        src="https://static.pexels.com/photos/370018/pexels-photo-370018.jpeg" alt="">
+                         <div id="first" class="post-item">
+                              <h2 id="first-title" class="post-title">
+                              </h2>
+                              <a id="firstUrl" href="#" class="post-thumbnail"></a>
+                              <img style="height: 350; width: 700;"
+                                   src="https://static.pexels.com/photos/370018/pexels-photo-370018.jpeg" alt="#">
                               </a>
                               <div class="post-text">
                                    <a href="#">
-                                        <h3 class="post-title">Post title place-holder</h3>
+                                        <h3 class="lead">Post title place-holder</h3>
                                    </a>
                                    <div class="post-meta">
                                         <span class="meta"><span class="meta-icon fa fa-user-circle-o"
-                                                  aria-hidden="true"></span><a class="meta-text">Steve
+                                                  aria-hidden="true"></span><a class="subheader">Steve
                                                   Jobs</a></span>
                                         <span class="meta"><span class="meta-icon fa fa-clock-o"
                                                   aria-hidden="true"></span><span
@@ -85,183 +103,363 @@
                     </div>
                </div>
           </div>
-          <hr>
-     </div>
-     <div class="row">
-          <div class="column">
-               <div class="row column">
-                    <p class="lead"><strong>Movies</strong></p>
-               </div>
-               <div class="row small-up-1 medium-up-2 large-up-3">
-                    <div class="column">
-                         <div id="movie-div-0">
-                              <!-- dynamically append <img> tag to <p>? -->
-                              <p class="mov-img-p"><img id="movie-img-0" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movies-title-0" target="_blank" style="color: black;">This
-                                   is the bestest
-                                   artsy article title ever.</a>
-                              <p class="subheader " id="movie-sum-0">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-                    <div class="column">
-                         <div id="movie-div-1">
-                              <p class="mov-img-p"><img id="movie-img-1" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movie-title-1" target="_blank" style="color: black;">This is
-                                   the bestest
-                                   artsy thing ever.</a>
-                              <p class="subheader " id="movie-sum-1">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-                    <div class="column">
-                         <div id="movie-div-2">
-                              <p class="mov-img-p"><img id="movie-img-2" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movie-title-2" target="_blank" style="color: black;">This is
-                                   the bestest
-                                   artsy thing ever.</a>
-                              <p class="subheader " id="movie-sum-2">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-               </div>
-          </div>
-          <hr>
-     </div>
-     <hr>
-     <div class="row">
-          <div class="column">
-               <div class="row column">
-                    <p class="lead"><strong>Movies</strong></p>
-               </div>
-               <div class="row small-up-1 medium-up-2 large-up-3">
-                    <div class="column">
-                         <div id="movie-div-0">
-                              <!-- dynamically append <img> tag to <p>? -->
-                              <p class="mov-img-p"><img id="movie-img-0" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movies-title-0" target="_blank" style="color: black;">This
-                                   is the bestest
-                                   artsy article title ever.</a>
-                              <p class="subheader " id="movie-sum-0">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-                    <div class="column">
-                         <div id="movie-div-1">
-                              <p class="mov-img-p"><img id="movie-img-1" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movie-title-1" target="_blank" style="color: black;">This is
-                                   the bestest
-                                   artsy thing ever.</a>
-                              <p class="subheader " id="movie-sum-1">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-                    <div class="column">
-                         <div id="movie-div-2">
-                              <p class="mov-img-p"><img id="movie-img-2" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movie-title-2" target="_blank" style="color: black;">This is
-                                   the bestest
-                                   artsy thing ever.</a>
-                              <p class="subheader " id="movie-sum-2">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-               </div>
-          </div>
-          <hr>
-     </div>
-     <hr>
-     <div class="row">
-          <div class="column">
-               <div class="row column">
-                    <p class="lead"><strong>Movies</strong></p>
-               </div>
-               <div class="row small-up-1 medium-up-2 large-up-3">
-                    <div class="column">
-                         <div id="movie-div-0">
-                              <!-- dynamically append <img> tag to <p>? -->
-                              <p class="mov-img-p"><img id="movie-img-0" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movies-title-0" target="_blank" style="color: black;">This
-                                   is the bestest
-                                   artsy article title ever.</a>
-                              <p class="subheader " id="movie-sum-0">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-                    <div class="column">
-                         <div id="movie-div-1">
-                              <p class="mov-img-p"><img id="movie-img-1" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movie-title-1" target="_blank" style="color: black;">This is
-                                   the bestest
-                                   artsy thing ever.</a>
-                              <p class="subheader " id="movie-sum-1">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-                    <div class="column">
-                         <div id="movie-div-2">
-                              <p class="mov-img-p"><img id="movie-img-2" src="https://via.placeholder.com/370x185"
-                                        alt="Movie article image here">
-                              </p>
-                              <a class="lead a-article" id="movie-title-2" target="_blank" style="color: black;">This is
-                                   the bestest
-                                   artsy thing ever.</a>
-                              <p class="subheader " id="movie-sum-2">Find out why your not cool unless you know about
-                                   this stuff.</p>
-                         </div>
-                    </div>
-               </div>
-          </div>
-          <hr>
-     </div>
-     <hr>
 
-     <div class="row">
-          <div class="column">
+          <hr>
+          <div class="row">
+               <div class="column">
+                    <div class="row column">
+                         <p class="lead"><strong>Local Politics</strong></p>
+                    </div>
+                    <div class="row small-up-1 medium-up-2 large-up-3">
+                         <div class="column">
+                              <div id="news-div-0">
+                                   <!-- dynamically append <img> tag to <p>? -->
+                                   <p class="news-img-p"><img id="news-img-0" src="https://via.placeholder.com/370x185"
+                                             alt="news article image here">
+                                   </p>
+                                   <a class="lead a-article" id="news-title-0" target="_blank"
+                                        style="color: black;">This
+                                        is the bestest
+                                        artsy article title ever.</a>
+                                   <p class="subheader " id="news-sum-0">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
+                         </div>
+                         <div class="column">
+                              <div id="news-div-1">
+                                   <p class="news-img-p"><img id="news-img-1" src="https://via.placeholder.com/370x185"
+                                             alt="Movie article image here">
+                                   </p>
+                                   <a class="lead a-article" id="news-title-1" target="_blank"
+                                        style="color: black;">This is
+                                        the bestest
+                                        artsy thing ever.</a>
+                                   <p class="subheader " id="news-sum-1">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
+                         </div>
+                         <div class="column">
+                              <div id="news-div-2">
+                                   <p class="mov-img-p"><img id="news-img-2" src="https://via.placeholder.com/370x185"
+                                             alt="Movie article image here">
+                                   </p>
+                                   <a class="lead a-article" id="news-title-2" target="_blank"
+                                        style="color: black;">This is
+                                        the bestest
+                                        artsy thing ever.</a>
+                                   <p class="subheader " id="news-sum-2">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
                <hr>
-               <div class="column text-center">
-                    <h4 class="h6 text-left"> Let' s Play Hangman! Click Inside the Box and press any key! </43> <div
-                                   class="responsive-embed panorama" style="align-content: center;">
-                                   <iframe width="1024" height="315"
-                                        src="/Users/nanaem808Nanaem808-MBP/Project-1/Mads/astrogame2.html"
-                                        frameborder="0" allowfullscreen></iframe>
-                         </div>
+          </div>
+          <hr>
+          <div class="row">
+               <div class="column">
+                    <div class="row column">
+                         <p class="lead"><strong>Politics</strong></p>
                     </div>
-                    <br>
-                    <div class="sticky-footer-css">
-                         <div class="columns shrink footer text-center">
-                              <h6 id="footer-title">Austin Tribune ©</h6>
-                              <ul class="menu align-center">
-                                   <li><a class="navbarLink" href="index.html" style="color: white">Front
-                                             Page</a></li>
-                              </ul>
+                    <div class="row small-up-1 medium-up-2 large-up-3">
+                         <div class="column">
+                              <div id="movie-div-0">
+                                   <!-- dynamically append <img> tag to <p>? -->
+                                   <p class="mov-img-p"><img id="movie-img-0" src="https://via.placeholder.com/370x185"
+                                             alt="Movie article image here">
+                                   </p>
+                                   <a class="lead a-article" id="politics-title-0" target="_blank"
+                                        style="color: black;">This
+                                        is the bestest
+                                        artsy article title ever.</a>
+                                   <p class="subheader " id="movie-sum-0">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
+                         </div>
+                         <div class="column">
+                              <div id="movie-div-1">
+                                   <p class="mov-img-p"><img id="movie-img-1" src="https://via.placeholder.com/370x185"
+                                             alt="Movie article image here">
+                                   </p>
+                                   <a class="lead a-article" id="movie-title-1" target="_blank"
+                                        style="color: black;">This is
+                                        the bestest
+                                        artsy thing ever.</a>
+                                   <p class="subheader " id="movie-sum-1">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
+                         </div>
+                         <div class="column">
+                              <div id="movie-div-2">
+                                   <p class="mov-img-p"><img id="movie-img-2" src="https://via.placeholder.com/370x185"
+                                             alt="Movie article image here">
+                                   </p>
+                                   <a class="lead a-article" id="movie-title-2" target="_blank"
+                                        style="color: black;">This is
+                                        the bestest
+                                        artsy thing ever.</a>
+                                   <p class="subheader " id="movie-sum-2">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
                          </div>
                     </div>
                </div>
+               <hr>
+          </div>
+          <hr>
+          <div class="row">
+               <div class="column">
+                    <div class="row column">
+                         <p class="lead"><strong>Crime</strong></p>
+                    </div>
+                    <div class="row small-up-1 medium-up-2 large-up-3">
+                         <div class="column">
+                              <div id="movie-div-0">
+                                   <!-- dynamically append <img> tag to <p>? -->
+                                   <p class="mov-img-p"><img id="movie-img-0" src="https://via.placeholder.com/370x185"
+                                             alt="Movie article image here">
+                                   </p>
+                                   <a class="lead a-article" id="politics-title-0" target="_blank"
+                                        style="color: black;">This
+                                        is the bestest
+                                        artsy article title ever.</a>
+                                   <p class="subheader " id="movie-sum-0">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
+                         </div>
+                         <div class="column">
+                              <div id="movie-div-1">
+                                   <p class="mov-img-p"><img id="movie-img-1" src="https://via.placeholder.com/370x185"
+                                             alt="Movie article image here">
+                                   </p>
+                                   <a class="lead a-article" id="movie-title-1" target="_blank"
+                                        style="color: black;">This is
+                                        the bestest
+                                        artsy thing ever.</a>
+                                   <p class="subheader " id="movie-sum-1">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
+                         </div>
+                         <div class="column">
+                              <div id="movie-div-2">
+                                   <p class="mov-img-p"><img id="movie-img-2" src="https://via.placeholder.com/370x185"
+                                             alt="Movie article image here">
+                                   </p>
+                                   <a class="lead a-article" id="movie-title-2" target="_blank"
+                                        style="color: black;">This is
+                                        the bestest
+                                        artsy thing ever.</a>
+                                   <p class="subheader " id="movie-sum-2">Find out why your not cool unless you
+                                        know
+                                        about
+                                        this stuff.</p>
+                              </div>
+                              <hr>
+                         </div>
+                         <div class="column-6">
+                              <figure class="h4">
+                                   <iframe width="700" height="315"
+                                        src="/Users/nanaem808Nanaem808-MBP/Project-1/Mads/astrogame2.html"
+                                        frameborder="0" allowfullscreen></iframe></figure>
+                         </div>
+                         <div class="column">
+                              <div class="row small-up-2">
+                                   <div class="column">
+                                        <img class="ad-image">
+                                   </div>
+                                   <div class="column hangman">
+                                        <h1>Play to Win!</h1>
+                                        <p class="game">Astrology Hangman</p>
+                                   </div>
+                              </div>
+                              <br>
+                         </div>
+                         <hr>
 
-               <script src="foundation-6.5.1-complete/js/vendor/jquery.js"></script>
-               <script src="foundation-6.5.1-complete/js/vendor/what-input.js"></script>
-               <script src="foundation-6.5.1-complete/js/vendor/foundation.js"></script>
-               <script src="foundation-6.5.1-complete/js/app.js"></script>
-               <script rel="text/javascript" src="js/script.js"></script>
+                         <hr>
+                         <div class="sticky-footer-css">
+                              <div class="columns shrink footer text-center">
+                                   <h6 id="footer-title">Austin Tribune ©</h6>
+                                   <ul class="menu align-center">
+                                        <li><a class="navbarLink" href="../index.html">Front
+                                                  Page</a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+
+                    </div>
 
 
+                    <script src="foundation-6.5.1-complete/js/vendor/jquery.js"></script>
+                    <script src="foundation-6.5.1-complete/js/vendor/what-input.js"></script>
+                    <script src="foundation-6.5.1-complete/js/vendor/foundation.js"></script>
+                    <script src="foundation-6.5.1-complete/js/app.js"></script>
+                    <script type="stylesheet" rel="text/javascript" src="localnews.js"></script>
+
+                    <script>
+                         $("img", "p:leads")
+                         var newsApiKey = "d9da22da0a2347a58fea3976369ee1f1";
+                         var newsApiURL = `https://newsapi.org/v2/everything?q=local+news+austin+texas&from=2019-11-20&to=2019-11-20&sortBy=popularity&pageSize=1&apiKey=d9da22da0a2347a58fea3976369ee1f1`;
+                         var politicsURL = `https://newsapi.org/v2/everything?q=+politics+taxes+polls+voting+austin+tx&domains=collider.com&apiKey=${newsApiKey}`;
+                         var musicURL = `https://newsapi.org/v2/everything?q=+music&domains=austinchronicle.com&apiKey=${newsApiKey}`;
+                         var artURL = `https://newsapi.org/v2/everything?q=+artist&domains=thisiscolossal.com&apiKey=${newsApiKey}`;
+                         var articleArray = [];
+
+
+                         var headlineLoad = function () {
+
+                              $.ajax({
+                                   url: newsApiURL,
+                                   method: "GET"
+                              }).then(function (response) {
+                                   // console.log(response);
+                                   $(".headline-img").empty();
+                                   $(".headline-img").append("<img>").attr("src", response.articles[1].urlToImage);
+                                   $(".headline-title").empty();
+                                   $(".headline-title").append(response.articles[1].title);
+                                   $(".headline-sum").empty();
+                                   $(".headline-sum").append(response.articles[1].description);
+                                   $(".headline-div").on("click", function () {
+                                        window.open(response.articles[1].url, '_blank');
+                                   })
+                              })
+                         }
+
+                         headlineLoad();
+
+                         // movie ajax call
+                         $.ajax({
+                              url: politicsURL,
+                              method: "GET"
+                         }).then(function (response) {
+                              articleArray = articleSearch(response);
+                              movieAppender(articleArray);
+                         });
+
+                         //     // music ajax call
+                         $.ajax({
+                              url: musicURL,
+                              method: "GET"
+                         }).then(function (response) {
+                              articleArray = articleSearch(response);
+                              musicAppender(articleArray);
+                         });
+
+                         // art ajax call
+                         $.ajax({
+                              url: artURL,
+                              method: "GET"
+                         }).then(function (response) {
+                              articleArray = articleSearch(response);
+                              artAppender(articleArray);
+                         });
+
+
+
+                         // function to iterate through articles for each url's api call
+                         var articleSearch = function (response) {
+                              var REsponse = response
+                              var results = [];
+                              for (i = 0; i < 3; i++) {
+                                   if (i === 0) {
+                                        results.push(REsponse.articles[i]);
+                                   }
+                                   if (i === 1) {
+                                        results.push(REsponse.articles[i]);
+                                   };
+                                   if (i === 2) {
+                                        results.push(REsponse.articles[i]);
+                                   }
+                              }
+                              return results;
+                         }
+                         //adds each of the 3 movie articles to there id targeted divs containing an img, title (also link to source) and description.
+                         var movieAppender = function (x) {
+
+                              for (i = 0; i < x.length; i++) {
+                                   var x = x;
+                                   var link = x[i].url;
+                                   $(`#movie-img-${i}`).empty();
+                                   $(`#movie-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
+                                   $(`#movie-title-${i}`).empty();
+                                   $(`#movie-title-${i}`).append(x[i].title);
+                                   $(`#movie-sum-${i}`).empty();
+                                   $(`#movie-sum-${i}`).append(x[i].description);
+                                   $(`#movie-title-${i}`).attr("href", link);
+                              }
+                         }
+                         //adds each of the 3 music articles to there id targeted divs containing an img, title (also link to source) and description.
+                         var musicAppender = function (x) {
+
+                              for (i = 0; i < x.length; i++) {
+                                   var x = x;
+                                   var link = x[i].url;
+                                   $(`#music-img-${i}`).empty();
+                                   $(`#music-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
+                                   $(`#music-title-${i}`).empty();
+                                   $(`#music-title-${i}`).append(x[i].title);
+                                   $(`#music-sum-${i}`).empty();
+                                   $(`#music-sum-${i}`).append(x[i].description);
+                                   $(`#music-title-${i}`).attr("href", link);
+                              }
+                         }
+                         //adds each of the 3 art articles to there id targeted divs containing an img, title (also link to source) and description.
+                         var artAppender = function (x) {
+
+                              for (i = 0; i < x.length; i++) {
+                                   var x = x;
+                                   var link = x[i].url;
+                                   $(`#art-img-${i}`).empty();
+                                   $(`#art-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
+                                   $(`#art-title-${i}`).empty();
+                                   $(`#art-title-${i}`).append(x[i].title);
+                                   $(`#art-sum-${i}`).empty();
+                                   $(`#art-sum-${i}`).append(x[i].description);
+                                   $(`#art-title-${i}`).attr("href", link);
+                              }
+                         }
+
+
+
+                         function adverts() {
+                              var i = 0;
+                              var interval = setInterval(function () {
+                                   var images = ['images/target.jpeg', 'images/dickssportinggoods.jpeg', 'images/whataburger.jpeg'];
+                                   // var i = 0;
+                                   $('.ad-image').attr('src', images[i]);
+                                   i++
+                                   if (i > images.length) {
+                                        i = 0
+                                   }
+                              }, 3000);
+                         }
+                         adverts();
+
+                         $('.hangman').click(function () {
+                              window.open("sandman.html", '_blank');
+                              return false;
+                         })
+
+
+
+                    </script>
 
 </body>
 

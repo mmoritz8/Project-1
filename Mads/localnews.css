@@ -17,6 +17,10 @@
           .section-head-main {
                font-size: 22px;
                margin-bottom: -17px;
+               color: black;
+               font-family: 'Calistoga', cursive;
+          }
+
           }
 
           .section-head-a,
@@ -43,10 +47,6 @@
                font-family: 'Calistoga', cursive;
           }
 
-          .section-head-main {
-               color: black;
-               font-family: 'Calistoga', cursive;
-          }
 
           .section-head-a {
                color: rgb(0, 107, 0);
