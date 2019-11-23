@@ -74,8 +74,8 @@ function articleBuild3() {
         method: "GET"
     }).then(function(response) {
         console.log(response)
-        $('.picD').attr('src', response.articles[1].urlToImage);
-        $('.titleD').text(response.articles[1].title);
+        $('.picD').attr('src', response.articles[2].urlToImage);
+        $('.titleD').text(response.articles[2].title);
         })
     }  
 function articleBuild4() {
