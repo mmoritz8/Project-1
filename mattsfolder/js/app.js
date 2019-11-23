@@ -47,19 +47,3 @@ newUser = {
   window.localStorage.setItem('users', JSON.stringify(userArray));
 })
 
-// function myMap() {
-// var contactAPI = "AIzaSyAoS0EuGwX4-XLp3J2JcSWgS7uk4dh1DRw";
-// var queryURL = "https://maps.googleapis.com/maps/api/js?key=" + contactAPI + "&callback=initMap"
-
-// }
-
-// var map;
-// var contactAPI;
-// function initMap() {
-//      contactAPI = "AIzaSyAoS0EuGwX4-XLp3J2JcSWgS7uk4dh1DRw";
-//  queryURL = "https://maps.googleapis.com/maps/api/js?key=" + contactAPI + "&callback=initMap"
-//   map = new google.maps.Map(document.getElementById('map'), {
-//     center: {lat: -34.397, lng: 150.644},
-//     zoom: 8
-//   });
-// }
