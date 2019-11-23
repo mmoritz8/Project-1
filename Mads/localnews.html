@@ -16,6 +16,7 @@
 
      <link rel='text/css' href="/tad_files/business_style.css">
      <script type="text/javascript" src="/Mads/localnews.js"></script>
+     <script type="text/javascript" src="/Mads/js/findrent.js"></script>
 
      <style>
           .bar {
@@ -89,20 +90,21 @@ font-family: 'Merriweather', serif; */
                               <h2 id="first-title" class="post-title">
                               </h2>
                               <a id="firstUrl" href="#" class="post-thumbnail"></a>
-                              <img style="height: 350; width: 700;"
+                              <img id="firstImg" style="height: 350; width: 700;"
                                    src="https://static.pexels.com/photos/370018/pexels-photo-370018.jpeg" alt="#">
                               </a>
                               <div class="post-text">
                                    <a href="#">
-                                        <h3 class="lead">Post title place-holder</h3>
+                                        <h3 class="firstlead">Post title place-holder</h3>
                                    </a>
                                    <div class="post-meta">
                                         <span class="meta"><span class="meta-icon fa fa-user-circle-o"
-                                                  aria-hidden="true"></span><a class="subheader">Steve
+                                                  aria-hidden="true"></span><a class="subheader" id="first-author'>Steve
                                                   Jobs</a></span>
-                                        <span class="meta"><span class="meta-icon fa fa-clock-o"
-                                                  aria-hidden="true"></span><span
-                                                  class="meta-text">22/06/2030</span></span>
+                                                  <p id=" first-desc"></a>
+                                             <span class="meta"><span class="meta-icon fa fa-clock-o"
+                                                       aria-hidden="true"></span><span
+                                                       class="meta-text">22/06/2030</span></span>
                                    </div>
                               </div>
                          </div>
@@ -277,192 +279,180 @@ font-family: 'Merriweather', serif; */
                                         this stuff.</p>
                               </div>
                               <hr>
-                         </div>
-                         <div class="column-6">
-                              <figure class="h4">
-                                   <iframe width="700" height="315"
-                                        src="/Users/nanaem808Nanaem808-MBP/Project-1/Mads/astrogame2.html"
-                                        frameborder="0" allowfullscreen></iframe></figure>
-                         </div>
-                         <div class="column">
-                              <div class="row small-up-2">
-                                   <div class="column">
-                                        <img class="ad-image">
-                                   </div>
-                                   <div class="column hangman">
-                                        <h1>Play to Win!</h1>
-                                        <p class="game">Astrology Hangman</p>
+                              <div class="column-6">
+                                   <figure class="h4">
+                                        <iframe width="700" height="315"
+                                             src="file:///Users/nanaem808Nanaem808-MBP/Project-1/Mads/political%20hangman.html"
+                                             frameborder="0" allowfullscreen></iframe></figure>
+                                   <br>
+                              </div>
+                              <hr>
+
+                              <hr>
+                              <div class="sticky-footer-css">
+                                   <div class="columns shrink footer text-center">
+                                        <h6 id="footer-title">Austin Tribune ©</h6>
+                                        <ul class="menu align-center">
+                                             <li><a class="navbarLink" href="../index.html">Front
+                                                       Page</a>
+                                             </li>
+                                        </ul>
                                    </div>
                               </div>
-                              <br>
+
                          </div>
-                         <hr>
+                         <script src="foundation-6.5.1-complete/js/vendor/what-input.js"></script>
+                         <script src="foundation-6.5.1-complete/js/vendor/foundation.js"></script>
+                         <script src="foundation-6.5.1-complete/js/app.js"></script>
+                         <script type="stylesheet" rel="text/javascript" src="localnews.js"></script>
 
-                         <hr>
-                         <div class="sticky-footer-css">
-                              <div class="columns shrink footer text-center">
-                                   <h6 id="footer-title">Austin Tribune ©</h6>
-                                   <ul class="menu align-center">
-                                        <li><a class="navbarLink" href="../index.html">Front
-                                                  Page</a>
-                                        </li>
-                                   </ul>
-                              </div>
-                         </div>
-
-                    </div>
-                    <script src="foundation-6.5.1-complete/js/vendor/what-input.js"></script>
-                    <script src="foundation-6.5.1-complete/js/vendor/foundation.js"></script>
-                    <script src="foundation-6.5.1-complete/js/app.js"></script>
-                    <script type="stylesheet" rel="text/javascript" src="localnews.js"></script>
-
-                    <script>
-                         $("img", "p:leads")
-                         var newsApiKey = "d9da22da0a2347a58fea3976369ee1f1";
-                         var newsApiURL = `https://newsapi.org/v2/everything?q=local+news+austin+texas&from=2019-11-20&to=2019-11-20&sortBy=popularity&pageSize=1&apiKey=d9da22da0a2347a58fea3976369ee1f1`;
-                         var politicsURL = `https://newsapi.org/v2/everything?q=+politics+taxes+polls+voting+austin+tx&domains=collider.com&apiKey=${newsApiKey}`;
-                         var musicURL = `https://newsapi.org/v2/everything?q=+music&domains=austinchronicle.com&apiKey=${newsApiKey}`;
-                         var artURL = `https://newsapi.org/v2/everything?q=+artist&domains=thisiscolossal.com&apiKey=${newsApiKey}`;
-                         var articleArray = [];
+                         <script>
+                              $("img", "p:leads")
+                              var newsApiKey = "d9da22da0a2347a58fea3976369ee1f1";
+                              var newsApiURL = `https://newsapi.org/v2/everything?q=local+news+austin+texas&from=2019-11-20&to=2019-11-20&sortBy=popularity&pageSize=1&apiKey=d9da22da0a2347a58fea3976369ee1f1`;
+                              var politicsURL = `https://newsapi.org/v2/everything?q=+politics+taxes+polls+voting+austin+tx&domains=collider.com&apiKey=${newsApiKey}`;
+                              var musicURL = `https://newsapi.org/v2/everything?q=+music&domains=austinchronicle.com&apiKey=${newsApiKey}`;
+                              var artURL = `https://newsapi.org/v2/everything?q=+artist&domains=thisiscolossal.com&apiKey=${newsApiKey}`;
+                              var articleArray = [];
 
 
-                         var headlineLoad = function () {
+                              var headlineLoad = function () {
 
+                                   $.ajax({
+                                        url: newsApiURL,
+                                        method: "GET"
+                                   }).then(function (response) {
+                                        // console.log(response);
+                                        $(".headline-img").empty();
+                                        $(".headline-img").append("<img>").attr("src", response.articles[1].urlToImage);
+                                        $(".headline-title").empty();
+                                        $(".headline-title").append(response.articles[1].title);
+                                        $(".headline-sum").empty();
+                                        $(".headline-sum").append(response.articles[1].description);
+                                        $(".headline-div").on("click", function () {
+                                             window.open(response.articles[1].url, '_blank');
+                                        })
+                                   })
+                              }
+
+                              headlineLoad();
+
+                              // movie ajax call
                               $.ajax({
-                                   url: newsApiURL,
+                                   url: politicsURL,
                                    method: "GET"
                               }).then(function (response) {
-                                   // console.log(response);
-                                   $(".headline-img").empty();
-                                   $(".headline-img").append("<img>").attr("src", response.articles[1].urlToImage);
-                                   $(".headline-title").empty();
-                                   $(".headline-title").append(response.articles[1].title);
-                                   $(".headline-sum").empty();
-                                   $(".headline-sum").append(response.articles[1].description);
-                                   $(".headline-div").on("click", function () {
-                                        window.open(response.articles[1].url, '_blank');
-                                   })
+                                   articleArray = articleSearch(response);
+                                   movieAppender(articleArray);
+                              });
+
+                              //     // music ajax call
+                              $.ajax({
+                                   url: musicURL,
+                                   method: "GET"
+                              }).then(function (response) {
+                                   articleArray = articleSearch(response);
+                                   musicAppender(articleArray);
+                              });
+
+                              // art ajax call
+                              $.ajax({
+                                   url: artURL,
+                                   method: "GET"
+                              }).then(function (response) {
+                                   articleArray = articleSearch(response);
+                                   artAppender(articleArray);
+                              });
+
+
+
+                              // function to iterate through articles for each url's api call
+                              var articleSearch = function (response) {
+                                   var REsponse = response
+                                   var results = [];
+                                   for (i = 0; i < 3; i++) {
+                                        if (i === 0) {
+                                             results.push(REsponse.articles[i]);
+                                        }
+                                        if (i === 1) {
+                                             results.push(REsponse.articles[i]);
+                                        };
+                                        if (i === 2) {
+                                             results.push(REsponse.articles[i]);
+                                        }
+                                   }
+                                   return results;
+                              }
+                              //adds each of the 3 movie articles to there id targeted divs containing an img, title (also link to source) and description.
+                              var movieAppender = function (x) {
+
+                                   for (i = 0; i < x.length; i++) {
+                                        var x = x;
+                                        var link = x[i].url;
+                                        $(`#movie-img-${i}`).empty();
+                                        $(`#movie-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
+                                        $(`#movie-title-${i}`).empty();
+                                        $(`#movie-title-${i}`).append(x[i].title);
+                                        $(`#movie-sum-${i}`).empty();
+                                        $(`#movie-sum-${i}`).append(x[i].description);
+                                        $(`#movie-title-${i}`).attr("href", link);
+                                   }
+                              }
+                              //adds each of the 3 music articles to there id targeted divs containing an img, title (also link to source) and description.
+                              var musicAppender = function (x) {
+
+                                   for (i = 0; i < x.length; i++) {
+                                        var x = x;
+                                        var link = x[i].url;
+                                        $(`#music-img-${i}`).empty();
+                                        $(`#music-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
+                                        $(`#music-title-${i}`).empty();
+                                        $(`#music-title-${i}`).append(x[i].title);
+                                        $(`#music-sum-${i}`).empty();
+                                        $(`#music-sum-${i}`).append(x[i].description);
+                                        $(`#music-title-${i}`).attr("href", link);
+                                   }
+                              }
+                              //adds each of the 3 art articles to there id targeted divs containing an img, title (also link to source) and description.
+                              var artAppender = function (x) {
+
+                                   for (i = 0; i < x.length; i++) {
+                                        var x = x;
+                                        var link = x[i].url;
+                                        $(`#art-img-${i}`).empty();
+                                        $(`#art-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
+                                        $(`#art-title-${i}`).empty();
+                                        $(`#art-title-${i}`).append(x[i].title);
+                                        $(`#art-sum-${i}`).empty();
+                                        $(`#art-sum-${i}`).append(x[i].description);
+                                        $(`#art-title-${i}`).attr("href", link);
+                                   }
+                              }
+
+
+
+                              function adverts() {
+                                   var i = 0;
+                                   var interval = setInterval(function () {
+                                        var images = ['images/target.jpeg', 'images/dickssportinggoods.jpeg', 'images/whataburger.jpeg'];
+                                        // var i = 0;
+                                        $('.ad-image').attr('src', images[i]);
+                                        i++
+                                        if (i > images.length) {
+                                             i = 0
+                                        }
+                                   }, 3000);
+                              }
+                              adverts();
+
+                              $('.hangman').click(function () {
+                                   window.open("sandman.html", '_blank');
+                                   return false;
                               })
-                         }
-
-                         headlineLoad();
-
-                         // movie ajax call
-                         $.ajax({
-                              url: politicsURL,
-                              method: "GET"
-                         }).then(function (response) {
-                              articleArray = articleSearch(response);
-                              movieAppender(articleArray);
-                         });
-
-                         //     // music ajax call
-                         $.ajax({
-                              url: musicURL,
-                              method: "GET"
-                         }).then(function (response) {
-                              articleArray = articleSearch(response);
-                              musicAppender(articleArray);
-                         });
-
-                         // art ajax call
-                         $.ajax({
-                              url: artURL,
-                              method: "GET"
-                         }).then(function (response) {
-                              articleArray = articleSearch(response);
-                              artAppender(articleArray);
-                         });
 
 
 
-                         // function to iterate through articles for each url's api call
-                         var articleSearch = function (response) {
-                              var REsponse = response
-                              var results = [];
-                              for (i = 0; i < 3; i++) {
-                                   if (i === 0) {
-                                        results.push(REsponse.articles[i]);
-                                   }
-                                   if (i === 1) {
-                                        results.push(REsponse.articles[i]);
-                                   };
-                                   if (i === 2) {
-                                        results.push(REsponse.articles[i]);
-                                   }
-                              }
-                              return results;
-                         }
-                         //adds each of the 3 movie articles to there id targeted divs containing an img, title (also link to source) and description.
-                         var movieAppender = function (x) {
-
-                              for (i = 0; i < x.length; i++) {
-                                   var x = x;
-                                   var link = x[i].url;
-                                   $(`#movie-img-${i}`).empty();
-                                   $(`#movie-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
-                                   $(`#movie-title-${i}`).empty();
-                                   $(`#movie-title-${i}`).append(x[i].title);
-                                   $(`#movie-sum-${i}`).empty();
-                                   $(`#movie-sum-${i}`).append(x[i].description);
-                                   $(`#movie-title-${i}`).attr("href", link);
-                              }
-                         }
-                         //adds each of the 3 music articles to there id targeted divs containing an img, title (also link to source) and description.
-                         var musicAppender = function (x) {
-
-                              for (i = 0; i < x.length; i++) {
-                                   var x = x;
-                                   var link = x[i].url;
-                                   $(`#music-img-${i}`).empty();
-                                   $(`#music-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
-                                   $(`#music-title-${i}`).empty();
-                                   $(`#music-title-${i}`).append(x[i].title);
-                                   $(`#music-sum-${i}`).empty();
-                                   $(`#music-sum-${i}`).append(x[i].description);
-                                   $(`#music-title-${i}`).attr("href", link);
-                              }
-                         }
-                         //adds each of the 3 art articles to there id targeted divs containing an img, title (also link to source) and description.
-                         var artAppender = function (x) {
-
-                              for (i = 0; i < x.length; i++) {
-                                   var x = x;
-                                   var link = x[i].url;
-                                   $(`#art-img-${i}`).empty();
-                                   $(`#art-img-${i}`).append("<img>").attr("src", x[i].urlToImage);
-                                   $(`#art-title-${i}`).empty();
-                                   $(`#art-title-${i}`).append(x[i].title);
-                                   $(`#art-sum-${i}`).empty();
-                                   $(`#art-sum-${i}`).append(x[i].description);
-                                   $(`#art-title-${i}`).attr("href", link);
-                              }
-                         }
-
-
-
-                         function adverts() {
-                              var i = 0;
-                              var interval = setInterval(function () {
-                                   var images = ['images/target.jpeg', 'images/dickssportinggoods.jpeg', 'images/whataburger.jpeg'];
-                                   // var i = 0;
-                                   $('.ad-image').attr('src', images[i]);
-                                   i++
-                                   if (i > images.length) {
-                                        i = 0
-                                   }
-                              }, 3000);
-                         }
-                         adverts();
-
-                         $('.hangman').click(function () {
-                              window.open("sandman.html", '_blank');
-                              return false;
-                         })
-
-
-
-                    </script>
+                         </script>
 
 </body>
 
