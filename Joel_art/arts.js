@@ -1,7 +1,7 @@
 var newsApiKey = "ce38e2eb001e4bcda09aab86ee29f490";
 var newsApiURL = `https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=${newsApiKey}`;
 var moviesURL = `https://newsapi.org/v2/everything?q=+movies&domains=collider.com&apiKey=${newsApiKey}`;
-var musicURL = `https://newsapi.org/v2/everything?q=+music&domains=pitchfork.com&apiKey=${newsApiKey}`;
+var musicURL = `https://newsapi.org/v2/everything?q=+music&domains=austinchronicle.com&apiKey=${newsApiKey}`;
 var artURL = `https://newsapi.org/v2/everything?q=+artist&domains=thisiscolossal.com&apiKey=${newsApiKey}`;
 var articleArray = [];
 
@@ -136,7 +136,7 @@ function adverts () {
 adverts();
 
 $('.hangman').click(function() {
-    window.location.href="sandman.html";
+    window.open("sandman.html", '_blank');
     return false;
 })
 
