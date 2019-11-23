@@ -25,27 +25,12 @@ Team Members:
 4. Matt
 
 File Structure:
-
-|__assets
-|  |_ally.jpg
-|  |_Austin-Skyline-at-Night_111311076.jpg
-|  |_businessimage.jpg
-|  |_busPageMainPic.jpg
-|  |_fidelity.png
-|  |_invesco.jpg
-|  |_joel_front_page.jpg
-|  |_mad_front_page.jpg
-|  |_marketWatch.png
-|  |_matt_front_page.jpg
-|  |_tdAmeritrade.jpg
-|  |_wells-fargo.jpg
-|_Joel_art  
-|        |_images_________________
-|        |_art-style.css          |_dickssportinggoods.jpeg
-|        |_ arts.html             |_target.jpeg
-|        |_arts.js                |_whataburger.jpeg
-|        |_entertainApp.js        
-|        |_sandman.html
-|_
-|
-|
+_assets
+_Joel_art
+_Mads
+_mattsfolder
+_tad_files
+_index_scripts.js
+_index_style.css
+_index.html
+_README.md
