@@ -1,13 +1,13 @@
 /* This is for the main page styling */
 .main-header {
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 
 
 /* This is for the basic business webpage */
-.busPageMain {
+.front-page-main {
     font-weight: bold;
 }
 
@@ -16,8 +16,14 @@
     background: white;
 }
 
-.sectionHead {
-    font-size: 30px;
+.section-head-main {
+    font-size: 22px;
+    margin-bottom: -17px;
+}
+
+.section-head-a, .section-head-b, .section-head-c {
+    font-size: 22px;
+    margin-bottom: 0px;
 }
 
 .bodyRowA {
@@ -32,11 +38,29 @@
     margin-bottom: 30px;
 }
 
-h2, .sectionHead{
+h2 {
+    color: black;
+    font-family: 'Calistoga', cursive;
+}
+
+.section-head-main {
+    color: #1AA883;
+    font-family: 'Calistoga', cursive;
+}
+
+.section-head-a {
     color: rgb(0, 107, 0);
     font-family: 'Calistoga', cursive;
-    /* font-family: 'Playfair Display', serif;
-    font-family: 'Merriweather', serif; */
+}
+
+.section-head-b {
+    color: #7303c0;
+    font-family: 'Calistoga', cursive;
+}
+
+.section-head-c {
+    color: #c31432;
+    font-family: 'Calistoga', cursive;
 }
 
 .titleLink {
@@ -52,18 +76,17 @@ h2, .sectionHead{
 
 /* This is for the advertisement section if I choose to do it */
 .advertisement {
-    margin-left: 2%;
+    margin-left: 3%;
     height: 1px;
     position: fixed;
     top: 100px;
 }
 
-.adv-pic-a, .adv-pic-b {
-    margin-bottom: 80%;
-    width: 80%;
+.advPic {
+    margin-bottom: 250%;
 }
 
-@media only screen and (max-width: 1760px) {
+@media only screen and (max-width: 1540px) {
     .advertisement {
       display: none !important;
     }
@@ -72,9 +95,11 @@ h2, .sectionHead{
 /* This is for the Navbar */
 header {
     width: 100%;
-    margin-bottom: 175px;
+    /* position: sticky; */
+    margin-bottom: 165px;
 }
 
+/* This is for the Navbar */
 li {
     display: inline;
     margin-right: 30px;
@@ -94,6 +119,7 @@ a:hover {
 a:visited {
     color: white;
 }
+
 
 .title-bar {
     text-align: center;

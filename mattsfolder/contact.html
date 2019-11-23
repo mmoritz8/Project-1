@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
+    <meta class="foundation-mq">
+    <link rel="stylesheet" href="style.css">
+    <style>
+           @media only screen and (max-width: 700px) {
+            .container {
+                margin-top: 30%;
+            }
+           } 
+     </style>  
+</head>
+
+
+<body class="contact-background">
+    <header>
+        <nav class="title-bar">
+            <ul class="horizontal meium-horizontal large-horizontal menu">
+                <li><a class="navbarLink" href="../index.html">Home</a></li>
+                <li><a class="navbarLink" href="../Mads/localnews.html">Local</a></li>
+                <li><a class="navbarLink" href="../tad_files/business.html">Business</a></li>
+                <li><a class="navbarLink" href="../Joel_art/arts.html">Lifestyle</a></li>
+                <li><a class="navbarLink" href="sports.html">Sports</a></li>
+                <li><a class="navbarLink" href='contact.html'>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="row front-page-main-row">
+            <div class="small-12 medium-12 large-4 column">
+                <h2 class="front-page-main contact-us">Contact Us</h2>
+                <input type="text" class="contact-name" placeholder="Name">
+        <input type="email" class="contact-name" placeholder="Email">
+        <textarea class="contact-name" placeholder="Write something..."></textarea>
+            </div>
+            <div class="small-12 medium-12 large-4 column colmap">
+               <div id="map"></div>
+            </div>
+            <div class="small-12 medium-12 large-4 column colmap">
+                <p>
+                    The Austin Tribune<br>
+                    2405 Robert Dedman Dr.<br>
+                    Austin, Texas 78712<br>
+                    Phone: (512) 471-3121
+                </p>
+            </div>
+    </div>
+   <div class="row">
+       <hr>
+   </div>
+
+</body>
+<script>
+    var map;
+    var marker;
+    var myLatLng = {lat: 30.287, lng: -97.729};
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: myLatLng,
+        zoom: 11
+      });
+      marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Our Headquarters'
+      });
+
+    }
+  </script>
+  <script src=""
+  async defer></script>
+</html>
+
+
+</html>

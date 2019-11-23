@@ -34,23 +34,28 @@ header {
     position: sticky;
     background-color: #c31432;
     margin-bottom: 50px;
-    }
-nav {
+}
+
+
+/* nav {
 text-align: left;
 color: white;
 font-size: 18px;
 padding: 5px;
 padding-top: 15px;
 }
+
 li a {
     color: white;
 }
+
 li {
     display: inline;
     margin-right: 30px;
     border-left: 1px solid #000000;
     padding-left: 60px;
-}
+} */
+
 
 .top-bar, .top-bar ul{
     background-color: #c31432;
@@ -109,7 +114,7 @@ h1 {
     width: 20%;
 }
 h2 {
-    text-align: center;
+    text-align: left;
 }
 
 .container {
@@ -156,4 +161,63 @@ transition: all 0.15s;
 }
 .over {
     display: none;
+}
+
+h5 {
+    margin-left: 40%;
+}
+.contact-us {
+   color: #2C5364;
+}
+
+.contact-head {
+    color: #434343;
+    font-weight: bold;
+    text-align: left;
+}
+.contact-name {
+    width: 300px;
+}
+
+#map {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.row3 {
+margin-top: 50px;
+margin-bottom: 10%;
+}
+
+.last {
+    margin-left: 15%;
+}
+
+.contact-container {
+    width: 500px;
+    float: left;
+    margin-left: 20%;
+}
+.address {
+    margin-left: 20px;
+    font-family: serif;
+    font-size: 22px;
+}
+.directions {
+    float: left;
+  
+}
+
+/* This is for the footer at the bottom of the page */
+
+.sticky-footer-css .footer {
+    height: 6rem;
+    background-color: #242729;
+    color: #fff;
+    padding-top: 0.75rem;
+    margin-left: 0rem;
+}
+#footer-title {
+    font-family: 'Calistoga', cursive;
 }
