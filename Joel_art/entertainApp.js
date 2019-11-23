@@ -1,5 +1,5 @@
 var famousPerson = ["d","a","v","i","d","b","o","w","i","e"];
-var incorrectAnswer = ["s","a","n","g","m","a","n"]; 
+var incorrectAnswer = ["h","a","n","g","m","a","n"]; 
 var userArray = [];
 var hangman = "";
 var answer = [];
@@ -14,21 +14,23 @@ var email;
     if(famousPerson.includes(response)) {
         $("." + response).text(response);
         answer.push(response);
-        if(answer.length == famousPerson.length) {
-        $('.congrats').css('display', 'inline');
-        $('.sweepstakes').css('display', 'inline');
+        if(answer.length === 8) {
+        $('.congrats').append(`<h1 id="congrats-h1">Congratulations! You Win!</h1>`);
+        $('.sweepstakes').attr('style', 'display: inline;');
         $('h3').css('display', 'none');
+        
         }
      }else {
         hangman += (incorrectAnswer[i]);
         $('h3').append(incorrectAnswer[i]);
         i++
     }
-    if(hangman == "sangman") {
+    if(hangman == "hangman") {
         $('.over').css('display', 'inline');
         $('.sweepstakes').css('display', 'inline');
     }
     console.log(hangman)
+    console.log(answer.length);
     $('#answer').val("");
 })
 $('.button').click(function(event) {
