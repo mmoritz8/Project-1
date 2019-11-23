@@ -7,9 +7,22 @@
 
      <title>Austin Tribune - LOCAL</title>
 
-     <link rel="stylesheet" href="foundation-6.5.1-complete/css/foundation.css">
-     <link rel="stylesheet" href="localnews.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+     <!-- font for css -->
      <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+     <meta class="foundation-mq">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="art-style.css">
+     <style>
+          .bar {
+               width: 100%;
+               height: 30px;
+               margin-bottom: 20px;
+               background-color: #1AA883;
+          }
+     </style>
 </head>
 
 <body>
@@ -22,141 +35,173 @@
                     <li><a class="navbarLink" href="../Joel_art/arts.html">Lifestyle</a></li>
                     <li><a class="navbarLink" href="../mattsfolder/sports.html">Sports</a></li>
                     <li><a class="navbarLink" href='../mattsfolder/contact.html'>Contact</a></li>
-                </ul>
+               </ul>
           </nav>
      </header>
-     <div class='row'>
+     <hr>
+     <div class="row column main-header">
           <div class="column">
-               <div class='bar'></div>
+
+               <div class="small-12 medium-12 large-12 column main-page-header">
+                    <img src="/assets/Images/Austin-Skyline-at-Night_111311076.jpg" alt="Header">
+               </div>
           </div>
      </div>
+     <div class='row'>
+          <div class=" columns">
+               <!-- Posts list -->
+               <div class="row">
+                    <div class="column">
 
-     <div class="container">
-          <div class="row">
-               <div class="column">
-                    <div class="article-row-section">
-                         <div class="article-row-section-inner">
-
-                              <h2 class="article-row-section-header">Austin's Local News</h2>
-                              <div class='column'>
-                                   <hr>
-                                   <br>
-                                   <div class="responsive-blog-post">
-                                        <div class="individual-post">
-                                             <h4>Title of Article</h4>
-                                             <p class="date">Date</p>
-                                             <img src="https://placehold.it/900x450">
-                                             <p> First few sentences of blog post show here and then eventually cuts
-                                                  out.
-                                                  First few sentences of blog post
-                                                  show here and then eventually cuts out. First few sentences of blog
-                                                  post
-                                                  show here and then eventually
-                                                  cuts out...</p>
-                                             <a class="button" href="#">Read On</a>
-                                        </div>
+                         <div class="post-item">
+                              <a href="#" class="post-thumbnail">
+                                   <img src="https://static.pexels.com/photos/370018/pexels-photo-370018.jpeg" alt="">
+                              </a>
+                              <div class="post-text">
+                                   <a href="#">
+                                        <h3 class="post-title">Post title place-holder</h3>
+                                   </a>
+                                   <div class="post-meta">
+                                        <span class="meta"><span class="meta-icon fa fa-user-circle-o"
+                                                  aria-hidden="true"></span><a class="meta-text">Steve
+                                                  Jobs</a></span>
+                                        <span class="meta"><span class="meta-icon fa fa-clock-o"
+                                                  aria-hidden="true"></span><span
+                                                  class="meta-text">22/06/2030</span></span>
                                    </div>
-
-
                               </div>
                          </div>
-                         <div class="medium-2 columns">
-
+                    </div>
+               </div>
+          </div>
+          <hr>
+     </div>
+     <div class="row">
+          <div class="column">
+               <div class="row column">
+                    <p class="lead"><strong>Movies</strong></p>
+               </div>
+               <div class="row small-up-1 medium-up-2 large-up-3">
+                    <div class="column">
+                         <div id="movie-div-0">
+                              <!-- dynamically append <img> tag to <p>? -->
+                              <p class="mov-img-p"><img id="movie-img-0" src="https://via.placeholder.com/370x185"
+                                        alt="Movie article image here">
+                              </p>
+                              <a class="lead a-article" id="movies-title-0" target="_blank" style="color: black;">This
+                                   is the bestest
+                                   artsy article title ever.</a>
+                              <p class="subheader " id="movie-sum-0">Find out why your not cool unless you know about
+                                   this stuff.</p>
                          </div>
                     </div>
-
+                    <div class="column">
+                         <div id="movie-div-1">
+                              <p class="mov-img-p"><img id="movie-img-1" src="https://via.placeholder.com/370x185"
+                                        alt="Movie article image here">
+                              </p>
+                              <a class="lead a-article" id="movie-title-1" target="_blank" style="color: black;">This is
+                                   the bestest
+                                   artsy thing ever.</a>
+                              <p class="subheader " id="movie-sum-1">Find out why your not cool unless you know about
+                                   this stuff.</p>
+                         </div>
+                    </div>
+                    <div class="column">
+                         <div id="movie-div-2">
+                              <p class="mov-img-p"><img id="movie-img-2" src="https://via.placeholder.com/370x185"
+                                        alt="Movie article image here">
+                              </p>
+                              <a class="lead a-article" id="movie-title-2" target="_blank" style="color: black;">This is
+                                   the bestest
+                                   artsy thing ever.</a>
+                              <p class="subheader " id="movie-sum-2">Find out why your not cool unless you know about
+                                   this stuff.</p>
+                         </div>
+                    </div>
                </div>
-               <a href="#">
-                    <article class="article-row">
-                         <div class="article-row-img">
-                              <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
-                         </div>
-                         <div class="article-row-content">
-                              <h1 class="article-row-content-header">HOW SPENDING $162,301.42 ON
-                                   CLOTHES MADE ME $692,500
-                              </h1>
+          </div>
+          <hr>
+     </div>
+     <div class="row">
+          <div class="columns">
+               <div class='row'>
+                    <div class="columns">
 
-                              <p class="article-row-content-description">Lorem ipsum dolor sit amet,
-                                   consectetur adipisicing
-                                   elit. Deserunt quia sit ullam, assumenda et. est at. Minima cum
-                                   enim, vero eligendi
-                                   perspiciatis similique modi voluptatem officia fugiat.</p>
+                         <a href="#">
+                              <article class="article-row">
+                                   <div class="article-row-img text-right">
+                                        <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
+                                   </div>
+                                   <div class="wide-article-link">
+                                        <div class="row">
+                                             <div class="small-12 medium-9 columns">
+                                                  <h4 class="article-title">
+                                                       <a href="#">
+                                                            Honing its dynamic pricing formula, Vacasa wants to make
+                                                            homeowners
+                                                            more cash than Airbnb
+                                                       </a>
+                                                  </h4>
+                                                  <p class="article-author"><em>by <a href="#">TechCrunch</a></em></p>
+                                                  <p class="article-elipsis">Lorem ipsum dolor sit amet, consectetur
+                                                       adipisicing
+                                                       elit, sed do eiusmod
+                                                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                       minim
+                                                       veniam,
+                                                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                       commodo
+                                                       consequat longshoreman... <a href="#" class="read-more">Read
+                                                            more</a></p>
+                                             </div>
+                                        </div>
+                              </article>
+                    </div>
+                    <div class="small-12 medium-3 columns flex-container align-middle">
+                         <img
+                              src="https://images.pexels.com/photos/29410/pexels-photo-29410.jpg?w=1260&h=750&auto=compress&cs=tinysrgb">
+                    </div>
+               </div>
+          </div>
 
-                              <p class="article-row-content-author">By Yeti</p>
-                              <time class="article-row-content-time" datetime="2008-02-14 20:00">July 14th
-                                   2021</time>
-                         </div>
-                    </article>
-               </a>
+          </article>
+          <br>
+          <hr>
+          </a>
 
-               <a href="#">
-                    <article class="article-row">
-                         <div class="article-row-img">
-                              <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
-                         </div>
-                         <div class="article-row-content">
-                              <h1 class="article-row-content-header">HOW I’M GOING TO LOSE ALL MY
-                                   CUSTOMERS AND WRECK MY
-                                   BUSINESS</h1>
+     </div>
+     </div>
+     </div>
+     </div>
 
-                              <p class="article-row-content-description">Lorem ipsum dolor sit amet,
-                                   consectetur cupiditate,
-                                   unde libero quisquam ipsam debitis earum omnis aperiam nulla
-                                   eaque vitae error optio
-                                   tempora voluptatem, quae impedit laborum placeat. Expedita!</p>
 
-                              <p class="article-row-content-author">By Yeti</p>
-                              <time class="article-row-content-time" datetime="2008-02-14 20:00">July 14th
-                                   2021</time>
-                         </div>
-                    </article>
-                    <br>
-                    <hr>
-               </a>
-
+     <div class="row">
+          <div class="column">
+               <p>
+                    <h3 class="h5 text-center"> Let's Play Hangman! Click Inside the Box and press any key!
+                         </h5>
+               </p>
           </div>
      </div>
 
-     </div>
-     <div class="row small-up-2>
-          <div class="column text-left">
-               <h3 class="h5"> Let's Play Hangman!</h3>
-          </div>
-          <div class="small-up-2">
-               <h5 class="h6 text-right">Click Inside the Box and press any key!</h5>
-
-               <a href="astrogame.html">
-                    <iframe style="height: 400px; width:400px; border-color: black 1px solid;"
-                         src="file:///Users/nanaem808Nanaem808-MBP/Project-1/Mads/astrogame.html"></iframe>
-               </a>
-
+     <br>
+     <div class="sticky-footer-css">
+          <div class="columns shrink footer text-center">
+               <h6 id="footer-title">Austin Tribune ©</h6>
+               <ul class="menu align-center">
+                    <li><a class="navbarLink" href="index.html" style="color: white">Front Page</a></li>
+               </ul>
           </div>
      </div>
-          <div class="column text-right">
-               <h3 class="h5 text-left"> Let's Play Hangman!</h3>
-          </div>
-          <div class="small-up-2">
-               <h5 class="h6 text-left">Click Inside the Box and press any key!</h5>
-          
-               <a href="astrogame.html">
-                    <iframe style="height: 400px; width:400px; border-color: black 1px solid;"
-                         src="file:///Users/nanaem808Nanaem808-MBP/Project-1/Mads/astrogame.html"></iframe>
-               </a>
-          
-          </div>
-          </div>
-
-
      </div>
-     </div>
-     </div>
-     </div>
-
 
      <script src="foundation-6.5.1-complete/js/vendor/jquery.js"></script>
      <script src="foundation-6.5.1-complete/js/vendor/what-input.js"></script>
      <script src="foundation-6.5.1-complete/js/vendor/foundation.js"></script>
      <script src="foundation-6.5.1-complete/js/app.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 </body>
 

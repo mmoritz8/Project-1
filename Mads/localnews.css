@@ -128,9 +128,13 @@
                width: 100%;
           }
 
-          iframe {
+          iframe:first-child {
                float: right;
                align-content: center;
+          }
+
+          iframe:last-child {
+            float: left;
           }
 
     .bar {
