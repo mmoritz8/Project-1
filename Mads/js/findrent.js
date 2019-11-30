@@ -1,4 +1,4 @@
-var queryURL = 'https://newsapi.org/v2/everything?q=+local+news+austin+texas+politics+voting&from=2019-11-20&to=2019-11-25&sortBy=popularity&pageSize=2&apiKey=d9da22da0a2347a58fea3976369ee1f1'
+var queryURL = 'https://newsapi.org/v2/everything?q=+news+austin+texas+neighborhoods&from=2019-11-20&to=2019-11-25&sortBy=relevancy&pageSize=2&apiKey=d9da22da0a2347a58fea3976369ee1f1'
 $.ajax({
      url: queryURL,
      method: "GET",
