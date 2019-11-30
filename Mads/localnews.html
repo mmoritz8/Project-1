@@ -10,8 +10,42 @@
      <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
      <meta class="foundation-mq">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation-float.css" rel="stylesheet">
-     <link rel='text/css' href="/tad_files/business_style.css">
+     <link rel='text/css' href="/Joel_art/art-style.css">
      <style>
+          header {
+               width: 100%;
+               position: sticky;
+               margin-bottom: 150px;
+          }
+
+          li {
+               display: inline;
+               margin-right: 30px;
+               padding-left: 20px;
+          }
+
+          a {
+               color: white;
+               font-weight: bold;
+          }
+
+          a:hover {
+               color: white;
+               background: #414547;
+          }
+
+          a:visited {
+               color: white;
+          }
+
+          .title-bar {
+               text-align: center;
+               background-color: #242729;
+               position: fixed;
+               top: 0;
+               width: 100%;
+          }
+
           .bar {
                width: 100%;
                height: 30px;
@@ -35,17 +69,14 @@
           <nav class="title-bar">
                <ul class="horizontal meium-horizontal large-horizontal menu">
                     <li><a class="navbarLink" href="../index.html">Home</a></li>
-                    <li><a class="navbarLink" href="localnews.html">Local</a></li>
+                    <li><a class="navbarLink" href="../Mads/localnews.html">Local</a></li>
                     <li><a class="navbarLink" href="../tad_files/business.html">Business</a></li>
                     <li><a class="navbarLink" href="../Joel_art/arts.html">Lifestyle</a></li>
-                    <li><a class="navbarLink" href="../mattsfolder/sports.html">Sports</a></li>
-                    <li><a class="navbarLink" href='../mattsfolder/contact.html'>Contact</a></li>
+                    <li><a class="navbarLink" href="sports.html">Sports</a></li>
+                    <li><a class="navbarLink" href='contact.html'>Contact</a></li>
                </ul>
           </nav>
      </header>
-     <div class="bar"></div>
-
-     <hr>
      <div class="row column main-header">
           <div class="column align-center">
                <div class="small-12 medium-12 large-12 column main-page-header">
@@ -65,8 +96,9 @@
                <div class="column">
                     <div id="news-div-0">
                          <!-- dynamically append <img> tag to <p>? -->
-                         <p class="mov-img-p"><img id="news-img-0" src="https://via.placeholder.com/370x185"
-                                   alt="Movie article image here">
+                         <p class="mov-img-p"><iframe id="news-img-0"
+                                   src="https://9to5mac.com/2019/11/20/austin-texas-campus/"
+                                   alt="Movie article image here"></iframe>
                          </p>
                          <a class="lead a-article" id="news-title-0" target="_blank" style="color: black;">This is the
                               bestest artsy article title ever.</a>
@@ -77,10 +109,10 @@
 
                     </div>
                </div>
-               <div class="column">
+               <div class="column text-center">
                     <div id="news-div-1">
-                         <p class="mov-img-p"><img id="news-img-1" src="https://via.placeholder.com/370x185"
-                                   alt="Movie article image here">
+                         <p class="yes"><iframe
+                                   src="https://www.cnn.com/2019/11/24/opinions/feel-bad-politics-and-feel-good-movies-opinion-column/index.html"></iframe>
                          </p>
                          <a class="lead a-article" id="news-title-1" target="_blank" style="color: black;">This is the
                               bestest artsy thing ever.</a>
