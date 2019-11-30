@@ -1,42 +1,23 @@
-$(document).ready(function () {
+$.ajax({
+     url: 'https://newsapi.org/v2/everything?q=+local+news+austin+texas&from=2019-11-20&to=2019-11-25&sortBy=popularity&pageSize=1&apiKey=d9da22da0a2347a58fea3976369ee1f1',
+     method: "GET",
+}).then(function (response) {
+     console.log(this);
+     var results = response.data;
+     var title = document.getElementById("news-title-0");
+     $("#news-title-0").text(response.articles[0].title);
 
-     var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://realtymole-rental-estimate-v1.p.rapidapi.com/rentalPrice?address=2405%20Robert%20Dedman%20Dr%252C%20Austin%252C%20TX&bedrooms=1&bathrooms=2&propertyType=Single%20Family&squareFootage=1600&compCount=5",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "realtymole-rental-estimate-v1.p.rapidapi.com",
-		"x-rapidapi-key": "a5fda4c82emsh1f5d00eeb5ef450p1dba09jsndd9e8455fd50"
-	}
-}
+     var summary = document.getElementById("news-sum-0");
+     $("#news-sum-0").text(response.articles[0].description);
 
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
-     function newsQuery(url) {
-          $.ajax({
-               url: 'https://newsapi.org/v2/everything?sortBy=relevancy&q=+austin+texas+local+news&pageSize=1&apiKey=d9da22da0a2347a58fea3976369ee1f1',
-               method: "GET",
-          }).then(function (newsData) {
-               for (var i = 0; i < newsTitles.length; i++) {
+     var image = document.getElementById(".mov-img-p");
 
-                    console.log(this);
-                    console.log(response.data);
-                    var results = response.data;
-                    var targetOne = document.getElementById("target");
-                    $('#firstImg').empty();
-                    $('.first-title').empty();
-                    $('.firstUrl').empty();
-                    $('.first-author').empty();
-                    $('.first-title').empty();
-                    $('.first-desc').empty();
+    $(".mov-img-p").append("<img>").attr("src", response.articles[0].urlToImage); 
 
-                    $('.first-title').text(newsData.articles[0].title);
-                    $('.first-desc').text(newsData.articles[0].description);
-                    $('.firstUrl').attr('src', newsData.articles[0].urlToImage);
+          var summary = document.getElementById("news-url-0");
+     $("#news-url-0").text(response.articles[0].url);
 
-               }
-          })
-     }
-});
+     
+
+     
+})
