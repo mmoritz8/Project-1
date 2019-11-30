@@ -12,7 +12,7 @@ $.ajax({
 
      var image = document.getElementById(".mov-img-p");
 
-    $(".mov-img-p").append("<img>").attr("src", response.articles[0].urlToImage); 
+    $(".news-img-0").img('url', response.articles[0].urltoimage); 
 
           var summary = document.getElementById("news-url-0");
      $("#news-url-0").text(response.articles[0].url);
