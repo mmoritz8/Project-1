@@ -22,7 +22,7 @@ $.ajax({
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/3hourly?lang=en&units=I&lat=30.2672&lon=-97.7431",
+	"url": "https://api.weatherbit.io/v2.0/current?city=austin,tx&key=a5fda4c82emsh1f5d00eeb5ef450p1dba09jsndd9e8455fd50",
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "weatherbit-v1-mashape.p.rapidapi.com",
@@ -37,6 +37,24 @@ $.ajax(settings).done(function (response) {
      var weather = document.getElementById("com-sum-3");
      $("#com-sum-3").text(response.data[9].temp + 'F');
      
+});
+
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://moon-phase.p.rapidapi.com/moon_phase/",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "moon-phase.p.rapidapi.com",
+		"x-rapidapi-key": "a5fda4c82emsh1f5d00eeb5ef450p1dba09jsndd9e8455fd50"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+     console.log(response);
+     var phase = document.getElementById("moon-phase");
+     var moon = document.getElementById("moonInfo");
+     $(moon).text(response.titleText);
 });
 
 var settings = {
