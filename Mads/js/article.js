@@ -19,25 +19,6 @@ $.ajax({
      
 })
 
-var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://api.weatherbit.io/v2.0/current?city=austin,tx&key=a5fda4c82emsh1f5d00eeb5ef450p1dba09jsndd9e8455fd50",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "weatherbit-v1-mashape.p.rapidapi.com",
-		"x-rapidapi-key": "a5fda4c82emsh1f5d00eeb5ef450p1dba09jsndd9e8455fd50"
-	}
-}
-
-$.ajax(settings).done(function (response) {
-     console.log(response);
-     var cityname = document.getElementById("com-title-3");
-     $("#com-title-3").text(response.city_name + response.state_code);
-     var weather = document.getElementById("com-sum-3");
-     $("#com-sum-3").text(response.data[9].temp + 'F');
-     
-});
 
 var settings = {
 	"async": true,
