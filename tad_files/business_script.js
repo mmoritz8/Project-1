@@ -8,7 +8,7 @@ var sortBy = "sortBy=popularity";
 var to = "to=" + moment().format("YYYY-MM-DD");
 var from = "from=" + moment().startOf('week').format("YYYY-MM-DD");
 var investDomains = "domains=wsj.com,fool.com";
-var finDomains = "domains=cnbc.com,wsj.com";
+var finDomains = "domains=cnbc.com,wsj.com,reuters.com";
 var newsTitles = ["titleA", "titleB", "titleC", "titleD", "titleE", "titleF", "titleG", "titleH", "titleI"];
 var investTitles = ["titleJ", "titleK", "titleL", "titleM", "titleN", "titleO", "titleP", "titleQ"];
 var newsSubs = ["subA", "subB", "subC", "subD", "subE", "subF", "subG", "subH", "subI"];
@@ -19,6 +19,7 @@ var investPics = ["picJ", "picK", "picL", "picM", "picN", "picO", "picP", "picQ"
 //Creating the URLs for business and finance sections
 var busURL = "https://newsapi.org/v2/everything?apiKey=" + apiKey + "&" + catFinance + "&" + from + "&" + to + "&" + finDomains + "&" + sortBy;
 var investURL = "https://newsapi.org/v2/everything?apiKey=" + apiKey + "&" + catInvest + "&" + from + "&" + to + "&" + investDomains + "&" + sortBy;
+
 
 
 //Functions
